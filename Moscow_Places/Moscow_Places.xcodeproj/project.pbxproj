@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71491CE821930DC400A9C8D3 /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CE221930DC400A9C8D3 /* WelcomePresenter.swift */; };
+		71491CE921930DC400A9C8D3 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CE321930DC400A9C8D3 /* WelcomeRouter.swift */; };
+		71491CEA21930DC400A9C8D3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CE421930DC400A9C8D3 /* WelcomeViewController.swift */; };
+		71491CEB21930DC400A9C8D3 /* WelcomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CE521930DC400A9C8D3 /* WelcomeProtocols.swift */; };
+		71491CEC21930DC400A9C8D3 /* WelcomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CE621930DC400A9C8D3 /* WelcomeInteractor.swift */; };
+		71491CED21930DC400A9C8D3 /* WelcomeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CE721930DC400A9C8D3 /* WelcomeContainer.swift */; };
+		71491CF321930FBC00A9C8D3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CF221930FBC00A9C8D3 /* MenuViewController.swift */; };
 		71BE5B3F2180A1B000861992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BE5B3E2180A1B000861992 /* AppDelegate.swift */; };
-		71BE5B412180A1B000861992 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BE5B402180A1B000861992 /* ViewController.swift */; };
 		71BE5B442180A1B000861992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BE5B422180A1B000861992 /* Main.storyboard */; };
 		71BE5B462180A1B100861992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BE5B452180A1B100861992 /* Assets.xcassets */; };
 		71BE5B492180A1B100861992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BE5B472180A1B100861992 /* LaunchScreen.storyboard */; };
@@ -34,9 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		71491CE221930DC400A9C8D3 /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		71491CE321930DC400A9C8D3 /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
+		71491CE421930DC400A9C8D3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		71491CE521930DC400A9C8D3 /* WelcomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeProtocols.swift; sourceTree = "<group>"; };
+		71491CE621930DC400A9C8D3 /* WelcomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
+		71491CE721930DC400A9C8D3 /* WelcomeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeContainer.swift; sourceTree = "<group>"; };
+		71491CF221930FBC00A9C8D3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		71BE5B3B2180A1B000861992 /* Moscow_Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moscow_Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BE5B3E2180A1B000861992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71BE5B402180A1B000861992 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		71BE5B432180A1B000861992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71BE5B452180A1B100861992 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71BE5B482180A1B100861992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +86,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71491CE121930D4700A9C8D3 /* Welcome Controller */ = {
+			isa = PBXGroup;
+			children = (
+				71491CE221930DC400A9C8D3 /* WelcomePresenter.swift */,
+				71491CE321930DC400A9C8D3 /* WelcomeRouter.swift */,
+				71491CE421930DC400A9C8D3 /* WelcomeViewController.swift */,
+				71491CE521930DC400A9C8D3 /* WelcomeProtocols.swift */,
+				71491CE621930DC400A9C8D3 /* WelcomeInteractor.swift */,
+				71491CE721930DC400A9C8D3 /* WelcomeContainer.swift */,
+			);
+			path = "Welcome Controller";
+			sourceTree = "<group>";
+		};
 		71BE5B322180A1B000861992 = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +123,12 @@
 			isa = PBXGroup;
 			children = (
 				71BE5B3E2180A1B000861992 /* AppDelegate.swift */,
-				71BE5B402180A1B000861992 /* ViewController.swift */,
 				71BE5B422180A1B000861992 /* Main.storyboard */,
+				71491CE121930D4700A9C8D3 /* Welcome Controller */,
 				71BE5B452180A1B100861992 /* Assets.xcassets */,
 				71BE5B472180A1B100861992 /* LaunchScreen.storyboard */,
 				71BE5B4A2180A1B100861992 /* Info.plist */,
+				71491CF221930FBC00A9C8D3 /* MenuViewController.swift */,
 			);
 			path = Moscow_Places;
 			sourceTree = "<group>";
@@ -256,8 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71BE5B412180A1B000861992 /* ViewController.swift in Sources */,
+				71491CED21930DC400A9C8D3 /* WelcomeContainer.swift in Sources */,
+				71491CEB21930DC400A9C8D3 /* WelcomeProtocols.swift in Sources */,
+				71491CEC21930DC400A9C8D3 /* WelcomeInteractor.swift in Sources */,
+				71491CEA21930DC400A9C8D3 /* WelcomeViewController.swift in Sources */,
+				71491CE821930DC400A9C8D3 /* WelcomePresenter.swift in Sources */,
 				71BE5B3F2180A1B000861992 /* AppDelegate.swift in Sources */,
+				71491CE921930DC400A9C8D3 /* WelcomeRouter.swift in Sources */,
+				71491CF321930FBC00A9C8D3 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

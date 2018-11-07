@@ -1,0 +1,22 @@
+//
+//  PlacePresenter.swift
+//  Moscow_Places
+//
+//  Created by Влад on 07/11/2018.
+//  Copyright © 2018 Влад. All rights reserved.
+//
+
+import Foundation
+
+final class PlacePresenter {
+	weak var view: PlaceViewInput?
+	var router: PlaceRouterInput!
+	var interactor: PlaceInteractorInput!
+	weak var moduleOutput: PlaceModuleOutput?
+}
+
+extension PlacePresenter: PlaceViewOutput {
+}
+
+extension PlacePresenter: PlaceInteractorOutput {
+}

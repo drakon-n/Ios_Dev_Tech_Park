@@ -14,18 +14,7 @@
 		71491CEC21930DC400A9C8D3 /* WelcomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CE621930DC400A9C8D3 /* WelcomeInteractor.swift */; };
 		71491CED21930DC400A9C8D3 /* WelcomeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CE721930DC400A9C8D3 /* WelcomeContainer.swift */; };
 		71491CF321930FBC00A9C8D3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CF221930FBC00A9C8D3 /* MenuViewController.swift */; };
-		71491CFB21931BEE00A9C8D3 /* CategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CF521931BEE00A9C8D3 /* CategoryPresenter.swift */; };
-		71491CFC21931BEE00A9C8D3 /* CategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CF621931BEE00A9C8D3 /* CategoryRouter.swift */; };
-		71491CFD21931BEE00A9C8D3 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CF721931BEE00A9C8D3 /* CategoryViewController.swift */; };
-		71491CFE21931BEE00A9C8D3 /* CategoryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CF821931BEE00A9C8D3 /* CategoryProtocols.swift */; };
-		71491CFF21931BEE00A9C8D3 /* CategoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CF921931BEE00A9C8D3 /* CategoryInteractor.swift */; };
-		71491D0021931BEE00A9C8D3 /* CategoryContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CFA21931BEE00A9C8D3 /* CategoryContainer.swift */; };
-		71491D082193322400A9C8D3 /* PlacePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491D022193322400A9C8D3 /* PlacePresenter.swift */; };
-		71491D092193322400A9C8D3 /* PlaceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491D032193322400A9C8D3 /* PlaceRouter.swift */; };
-		71491D0A2193322400A9C8D3 /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491D042193322400A9C8D3 /* PlaceViewController.swift */; };
-		71491D0B2193322400A9C8D3 /* PlaceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491D052193322400A9C8D3 /* PlaceProtocols.swift */; };
-		71491D0C2193322400A9C8D3 /* PlaceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491D062193322400A9C8D3 /* PlaceInteractor.swift */; };
-		71491D0D2193322400A9C8D3 /* PlaceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491D072193322400A9C8D3 /* PlaceContainer.swift */; };
+		71AB31E4219C348100F8E88C /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AB31E3219C348100F8E88C /* RoundButton.swift */; };
 		71BE5B3F2180A1B000861992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BE5B3E2180A1B000861992 /* AppDelegate.swift */; };
 		71BE5B442180A1B000861992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BE5B422180A1B000861992 /* Main.storyboard */; };
 		71BE5B462180A1B100861992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BE5B452180A1B100861992 /* Assets.xcassets */; };
@@ -59,18 +48,7 @@
 		71491CE621930DC400A9C8D3 /* WelcomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
 		71491CE721930DC400A9C8D3 /* WelcomeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeContainer.swift; sourceTree = "<group>"; };
 		71491CF221930FBC00A9C8D3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		71491CF521931BEE00A9C8D3 /* CategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenter.swift; sourceTree = "<group>"; };
-		71491CF621931BEE00A9C8D3 /* CategoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRouter.swift; sourceTree = "<group>"; };
-		71491CF721931BEE00A9C8D3 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
-		71491CF821931BEE00A9C8D3 /* CategoryProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProtocols.swift; sourceTree = "<group>"; };
-		71491CF921931BEE00A9C8D3 /* CategoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInteractor.swift; sourceTree = "<group>"; };
-		71491CFA21931BEE00A9C8D3 /* CategoryContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryContainer.swift; sourceTree = "<group>"; };
-		71491D022193322400A9C8D3 /* PlacePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePresenter.swift; sourceTree = "<group>"; };
-		71491D032193322400A9C8D3 /* PlaceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceRouter.swift; sourceTree = "<group>"; };
-		71491D042193322400A9C8D3 /* PlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
-		71491D052193322400A9C8D3 /* PlaceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceProtocols.swift; sourceTree = "<group>"; };
-		71491D062193322400A9C8D3 /* PlaceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceInteractor.swift; sourceTree = "<group>"; };
-		71491D072193322400A9C8D3 /* PlaceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceContainer.swift; sourceTree = "<group>"; };
+		71AB31E3219C348100F8E88C /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		71BE5B3B2180A1B000861992 /* Moscow_Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moscow_Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BE5B3E2180A1B000861992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71BE5B432180A1B000861992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,32 +101,6 @@
 			path = "Welcome Controller";
 			sourceTree = "<group>";
 		};
-		71491CF421931BC200A9C8D3 /* Category Controller */ = {
-			isa = PBXGroup;
-			children = (
-				71491CF521931BEE00A9C8D3 /* CategoryPresenter.swift */,
-				71491CF621931BEE00A9C8D3 /* CategoryRouter.swift */,
-				71491CF721931BEE00A9C8D3 /* CategoryViewController.swift */,
-				71491CF821931BEE00A9C8D3 /* CategoryProtocols.swift */,
-				71491CF921931BEE00A9C8D3 /* CategoryInteractor.swift */,
-				71491CFA21931BEE00A9C8D3 /* CategoryContainer.swift */,
-			);
-			path = "Category Controller";
-			sourceTree = "<group>";
-		};
-		71491D012193320B00A9C8D3 /* Place controller */ = {
-			isa = PBXGroup;
-			children = (
-				71491D022193322400A9C8D3 /* PlacePresenter.swift */,
-				71491D032193322400A9C8D3 /* PlaceRouter.swift */,
-				71491D042193322400A9C8D3 /* PlaceViewController.swift */,
-				71491D052193322400A9C8D3 /* PlaceProtocols.swift */,
-				71491D062193322400A9C8D3 /* PlaceInteractor.swift */,
-				71491D072193322400A9C8D3 /* PlaceContainer.swift */,
-			);
-			path = "Place controller";
-			sourceTree = "<group>";
-		};
 		71BE5B322180A1B000861992 = {
 			isa = PBXGroup;
 			children = (
@@ -174,8 +126,7 @@
 			children = (
 				71BE5B3E2180A1B000861992 /* AppDelegate.swift */,
 				71BE5B422180A1B000861992 /* Main.storyboard */,
-				71491CF421931BC200A9C8D3 /* Category Controller */,
-				71491D012193320B00A9C8D3 /* Place controller */,
+				71AB31E3219C348100F8E88C /* RoundButton.swift */,
 				71491CE121930D4700A9C8D3 /* Welcome Controller */,
 				71BE5B452180A1B100861992 /* Assets.xcassets */,
 				71BE5B472180A1B100861992 /* LaunchScreen.storyboard */,
@@ -334,25 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71AB31E4219C348100F8E88C /* RoundButton.swift in Sources */,
 				71491CED21930DC400A9C8D3 /* WelcomeContainer.swift in Sources */,
 				71491CEB21930DC400A9C8D3 /* WelcomeProtocols.swift in Sources */,
-				71491D0A2193322400A9C8D3 /* PlaceViewController.swift in Sources */,
-				71491D0D2193322400A9C8D3 /* PlaceContainer.swift in Sources */,
-				71491D092193322400A9C8D3 /* PlaceRouter.swift in Sources */,
 				71491CEC21930DC400A9C8D3 /* WelcomeInteractor.swift in Sources */,
-				71491D082193322400A9C8D3 /* PlacePresenter.swift in Sources */,
 				71491CEA21930DC400A9C8D3 /* WelcomeViewController.swift in Sources */,
-				71491CFB21931BEE00A9C8D3 /* CategoryPresenter.swift in Sources */,
 				71491CE821930DC400A9C8D3 /* WelcomePresenter.swift in Sources */,
-				71491D0B2193322400A9C8D3 /* PlaceProtocols.swift in Sources */,
 				71BE5B3F2180A1B000861992 /* AppDelegate.swift in Sources */,
-				71491D0C2193322400A9C8D3 /* PlaceInteractor.swift in Sources */,
 				71491CE921930DC400A9C8D3 /* WelcomeRouter.swift in Sources */,
-				71491CFC21931BEE00A9C8D3 /* CategoryRouter.swift in Sources */,
-				71491D0021931BEE00A9C8D3 /* CategoryContainer.swift in Sources */,
-				71491CFE21931BEE00A9C8D3 /* CategoryProtocols.swift in Sources */,
-				71491CFF21931BEE00A9C8D3 /* CategoryInteractor.swift in Sources */,
-				71491CFD21931BEE00A9C8D3 /* CategoryViewController.swift in Sources */,
 				71491CF321930FBC00A9C8D3 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

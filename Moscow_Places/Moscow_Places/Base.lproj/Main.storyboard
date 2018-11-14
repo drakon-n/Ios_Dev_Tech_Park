@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JwZ-P6-s0w">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -38,7 +38,7 @@
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="StartTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ueJ-JM-7kt"/>
-                                    <segue destination="2Fv-gQ-M6v" kind="show" identifier="FirstSegue" id="BII-c4-u7z"/>
+                                    <segue destination="2Fv-gQ-M6v" kind="show" identifier="FirstSegue" id="kV5-Re-ONe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,54 +64,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QI1-du-umG">
-                                <rect key="frame" x="70" y="134" width="85" height="63"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QI1-du-umG" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
+                                <rect key="frame" x="70" y="104" width="85" height="93"/>
                                 <state key="normal" title="Text1"/>
                                 <connections>
-                                    <segue destination="AF0-ao-kfk" kind="show" identifier="ChooseCategory" id="TnA-x8-gqY"/>
+                                    <segue destination="AF0-ao-kfk" kind="show" id="TnA-x8-gqY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRI-3x-fIJ">
-                                <rect key="frame" x="220" y="134" width="85" height="63"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRI-3x-fIJ" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
+                                <rect key="frame" x="220" y="104" width="85" height="93"/>
                                 <state key="normal" title="Text2"/>
-                                <connections>
-                                    <action selector="SecondCategorySegue:" destination="tuG-lf-DZ4" eventType="touchUpInside" id="grj-Nh-4Pt"/>
-                                    <action selector="SecondCategorySegue:" destination="2Fv-gQ-M6v" eventType="touchUpInside" id="hVh-rV-Uo0"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivP-qg-37Z">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivP-qg-37Z" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
                                 <rect key="frame" x="220" y="237" width="85" height="85"/>
                                 <state key="normal" title="Text3"/>
-                                <connections>
-                                    <action selector="FourthCategorySegue:" destination="tuG-lf-DZ4" eventType="touchUpInside" id="ygs-hS-cI6"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9c5-Bz-gv0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9c5-Bz-gv0" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
                                 <rect key="frame" x="70" y="237" width="85" height="85"/>
                                 <state key="normal" title="Text4"/>
-                                <connections>
-                                    <action selector="ThirdCategorySegue:" destination="tuG-lf-DZ4" eventType="touchUpInside" id="YMJ-Si-v82"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEL-ao-GwR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEL-ao-GwR" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
                                 <rect key="frame" x="70" y="362" width="85" height="85"/>
                                 <state key="normal" title="Text5"/>
-                                <connections>
-                                    <action selector="FithCategorySegue:" destination="tuG-lf-DZ4" eventType="touchUpInside" id="3PO-1i-fBI"/>
-                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3E-ph-Vzj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите категорию" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3E-ph-Vzj">
                                 <rect key="frame" x="80" y="74" width="225" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZj-YH-sTC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZj-YH-sTC" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
                                 <rect key="frame" x="220" y="362" width="85" height="85"/>
                                 <state key="normal" title="Text6"/>
-                                <connections>
-                                    <action selector="SixthCategorySegue:" destination="tuG-lf-DZ4" eventType="touchUpInside" id="VOr-m7-Qj3"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -120,7 +104,7 @@
                             <constraint firstItem="fho-MN-42S" firstAttribute="trailing" secondItem="ivP-qg-37Z" secondAttribute="trailing" constant="70" id="4Wv-aa-dbM"/>
                             <constraint firstItem="B3E-ph-Vzj" firstAttribute="top" secondItem="fho-MN-42S" secondAttribute="top" constant="10" id="5IA-ve-tKd"/>
                             <constraint firstItem="B3E-ph-Vzj" firstAttribute="leading" secondItem="fho-MN-42S" secondAttribute="leading" constant="80" id="7wf-ZL-Ouq"/>
-                            <constraint firstItem="QI1-du-umG" firstAttribute="top" secondItem="fho-MN-42S" secondAttribute="top" constant="70" id="ELr-9S-nii"/>
+                            <constraint firstItem="QI1-du-umG" firstAttribute="top" secondItem="fho-MN-42S" secondAttribute="top" constant="40" id="ELr-9S-nii"/>
                             <constraint firstItem="9c5-Bz-gv0" firstAttribute="top" secondItem="QI1-du-umG" secondAttribute="bottom" constant="40" id="GKA-jW-ZKf"/>
                             <constraint firstItem="fho-MN-42S" firstAttribute="trailing" secondItem="tEL-ao-GwR" secondAttribute="trailing" constant="220" id="I8E-ZK-6d4"/>
                             <constraint firstItem="fho-MN-42S" firstAttribute="trailing" secondItem="jRI-3x-fIJ" secondAttribute="trailing" constant="70" id="I8z-zo-qlm"/>
@@ -128,7 +112,7 @@
                             <constraint firstItem="9c5-Bz-gv0" firstAttribute="leading" secondItem="fho-MN-42S" secondAttribute="leading" constant="70" id="RTy-l4-UHT"/>
                             <constraint firstItem="QI1-du-umG" firstAttribute="leading" secondItem="fho-MN-42S" secondAttribute="leading" constant="70" id="Sq8-uv-1JM"/>
                             <constraint firstItem="fho-MN-42S" firstAttribute="bottom" secondItem="9c5-Bz-gv0" secondAttribute="bottom" constant="345" id="XXg-Pc-B4T"/>
-                            <constraint firstItem="jRI-3x-fIJ" firstAttribute="top" secondItem="fho-MN-42S" secondAttribute="top" constant="70" id="XxN-dB-Gf9"/>
+                            <constraint firstItem="jRI-3x-fIJ" firstAttribute="top" secondItem="fho-MN-42S" secondAttribute="top" constant="40" id="XxN-dB-Gf9"/>
                             <constraint firstItem="fho-MN-42S" firstAttribute="trailing" secondItem="QI1-du-umG" secondAttribute="trailing" constant="220" id="Yia-NI-HGz"/>
                             <constraint firstItem="OZj-YH-sTC" firstAttribute="leading" secondItem="tEL-ao-GwR" secondAttribute="trailing" constant="65" id="Yrd-PR-Cto"/>
                             <constraint firstItem="fho-MN-42S" firstAttribute="bottom" secondItem="ivP-qg-37Z" secondAttribute="bottom" constant="345" id="Ysl-In-6KV"/>
@@ -145,19 +129,16 @@
                             <constraint firstItem="fho-MN-42S" firstAttribute="trailing" secondItem="9c5-Bz-gv0" secondAttribute="trailing" constant="220" id="wCG-IL-MV3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fho-MN-42S"/>
-                        <connections>
-                            <outlet property="FourthCategorySegue" destination="ivP-qg-37Z" id="ZZl-H9-a2d"/>
-                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXI-VH-J6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="748" y="124.58770614692655"/>
         </scene>
-        <!--Category View Controller-->
+        <!--View Controller-->
         <scene sceneID="DFP-cW-rZk">
             <objects>
-                <viewController id="AF0-ao-kfk" customClass="CategoryViewController" customModule="Moscow_Places" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AF0-ao-kfk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9XY-g4-dBH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,21 +161,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djs-If-clF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1592.8" y="122.78860569715144"/>
-        </scene>
-        <!--Place View Controller-->
-        <scene sceneID="uWk-ib-sJE">
-            <objects>
-                <viewController id="jip-37-zaD" customClass="PlaceViewController" customModule="Moscow_Places" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iNy-rs-C4S">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="0VY-dc-NUH"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VoL-Zv-syl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2468" y="123"/>
         </scene>
     </scenes>
 </document>

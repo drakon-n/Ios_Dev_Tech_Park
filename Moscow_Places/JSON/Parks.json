@@ -1,5 +1,7 @@
-[{
-	"name": "ParkGorkova"
-}, {
-	"name": "AnotherPark"
-}]
+{
+	"blog": [{
+		"name": "ParkGorkova"
+	}, {
+		"name": "AnotherPark"
+	}]
+}

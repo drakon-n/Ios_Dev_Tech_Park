@@ -25,16 +25,20 @@
             </objects>
             <point key="canvasLocation" x="-913" y="125"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="Moscow_Places" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Moscow_Places" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svS-PP-WoE">
-                                <rect key="frame" x="140" y="187" width="95" height="30"/>
+                                <rect key="frame" x="130" y="134" width="115" height="57.5"/>
+                                <color key="backgroundColor" red="0.58049782815457385" green="1" blue="0.54503133203871779" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="svS-PP-WoE" secondAttribute="height" multiplier="2:1" id="b6y-wl-hFG"/>
+                                </constraints>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="StartTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ueJ-JM-7kt"/>
@@ -42,11 +46,11 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.75815626305530537" green="0.90161234119700007" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="svS-PP-WoE" secondAttribute="bottom" constant="450" id="LAQ-ld-2TW"/>
-                            <constraint firstItem="svS-PP-WoE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="Mj2-hz-6cF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="svS-PP-WoE" secondAttribute="trailing" constant="140" id="Z6t-OC-UcF"/>
+                            <constraint firstItem="svS-PP-WoE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="6Io-X8-ZV5"/>
+                            <constraint firstItem="svS-PP-WoE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="F4s-kX-Yoq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="svS-PP-WoE" secondAttribute="trailing" constant="130" id="LAD-gI-B10"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -54,79 +58,98 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-113" y="125"/>
+            <point key="canvasLocation" x="-114.40000000000001" y="124.58770614692655"/>
         </scene>
-        <!--Welcome View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="PyT-vE-omJ">
             <objects>
-                <viewController id="2Fv-gQ-M6v" customClass="WelcomeViewController" customModule="Moscow_Places" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2Fv-gQ-M6v" customClass="MenuViewController" customModule="Moscow_Places" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tuG-lf-DZ4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QI1-du-umG" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
-                                <rect key="frame" x="70" y="104" width="85" height="93"/>
-                                <state key="normal" title="Text1"/>
+                                <rect key="frame" x="70" y="146" width="85" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="Pln-4m-bFj"/>
+                                    <constraint firstAttribute="width" constant="85" id="aZE-gf-Ktd"/>
+                                </constraints>
+                                <state key="normal" title="ТЦ"/>
                                 <connections>
-                                    <segue destination="AF0-ao-kfk" kind="show" id="TnA-x8-gqY"/>
+                                    <segue destination="AF0-ao-kfk" kind="show" identifier="BP" id="TnA-x8-gqY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRI-3x-fIJ" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
-                                <rect key="frame" x="220" y="104" width="85" height="93"/>
-                                <state key="normal" title="Text2"/>
+                                <rect key="frame" x="220" y="146" width="85" height="85"/>
+                                <state key="normal" title="Парки"/>
+                                <connections>
+                                    <segue destination="AF0-ao-kfk" kind="show" identifier="Parks" id="a9W-kk-B47"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivP-qg-37Z" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
-                                <rect key="frame" x="220" y="237" width="85" height="85"/>
-                                <state key="normal" title="Text3"/>
+                                <rect key="frame" x="220" y="271" width="85" height="85"/>
+                                <state key="normal" title="Музеи"/>
+                                <connections>
+                                    <segue destination="AF0-ao-kfk" kind="show" identifier="Museum" id="koC-08-4db"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9c5-Bz-gv0" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
-                                <rect key="frame" x="70" y="237" width="85" height="85"/>
-                                <state key="normal" title="Text4"/>
+                                <rect key="frame" x="70" y="271" width="85" height="85"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Туризм"/>
+                                <connections>
+                                    <segue destination="AF0-ao-kfk" kind="show" identifier="Tourism" id="2LJ-zJ-vF7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEL-ao-GwR" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
-                                <rect key="frame" x="70" y="362" width="85" height="85"/>
-                                <state key="normal" title="Text5"/>
+                                <rect key="frame" x="70" y="396" width="85" height="85"/>
+                                <state key="normal" title="Рестораны"/>
+                                <connections>
+                                    <segue destination="pFd-7w-YJa" kind="show" identifier="Restoran" id="e2r-RO-vLw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZj-YH-sTC" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
+                                <rect key="frame" x="220" y="396" width="85" height="85"/>
+                                <state key="normal" title="Эвенты"/>
+                                <connections>
+                                    <segue destination="AF0-ao-kfk" kind="show" identifier="Events" id="gfc-tP-ljM"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите категорию" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3E-ph-Vzj">
-                                <rect key="frame" x="80" y="74" width="225" height="21"/>
+                                <rect key="frame" x="75" y="85" width="225" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZj-YH-sTC" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
-                                <rect key="frame" x="220" y="362" width="85" height="85"/>
-                                <state key="normal" title="Text6"/>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.75815626309999995" green="0.9016123412" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="tEL-ao-GwR" firstAttribute="leading" secondItem="fho-MN-42S" secondAttribute="leading" constant="70" id="1q9-Zc-Qic"/>
-                            <constraint firstItem="fho-MN-42S" firstAttribute="trailing" secondItem="ivP-qg-37Z" secondAttribute="trailing" constant="70" id="4Wv-aa-dbM"/>
-                            <constraint firstItem="B3E-ph-Vzj" firstAttribute="top" secondItem="fho-MN-42S" secondAttribute="top" constant="10" id="5IA-ve-tKd"/>
-                            <constraint firstItem="B3E-ph-Vzj" firstAttribute="leading" secondItem="fho-MN-42S" secondAttribute="leading" constant="80" id="7wf-ZL-Ouq"/>
-                            <constraint firstItem="QI1-du-umG" firstAttribute="top" secondItem="fho-MN-42S" secondAttribute="top" constant="40" id="ELr-9S-nii"/>
-                            <constraint firstItem="9c5-Bz-gv0" firstAttribute="top" secondItem="QI1-du-umG" secondAttribute="bottom" constant="40" id="GKA-jW-ZKf"/>
-                            <constraint firstItem="fho-MN-42S" firstAttribute="trailing" secondItem="tEL-ao-GwR" secondAttribute="trailing" constant="220" id="I8E-ZK-6d4"/>
-                            <constraint firstItem="fho-MN-42S" firstAttribute="trailing" secondItem="jRI-3x-fIJ" secondAttribute="trailing" constant="70" id="I8z-zo-qlm"/>
-                            <constraint firstItem="fho-MN-42S" firstAttribute="bottom" secondItem="OZj-YH-sTC" secondAttribute="bottom" constant="220" id="OJz-CT-wRU"/>
-                            <constraint firstItem="9c5-Bz-gv0" firstAttribute="leading" secondItem="fho-MN-42S" secondAttribute="leading" constant="70" id="RTy-l4-UHT"/>
-                            <constraint firstItem="QI1-du-umG" firstAttribute="leading" secondItem="fho-MN-42S" secondAttribute="leading" constant="70" id="Sq8-uv-1JM"/>
-                            <constraint firstItem="fho-MN-42S" firstAttribute="bottom" secondItem="9c5-Bz-gv0" secondAttribute="bottom" constant="345" id="XXg-Pc-B4T"/>
-                            <constraint firstItem="jRI-3x-fIJ" firstAttribute="top" secondItem="fho-MN-42S" secondAttribute="top" constant="40" id="XxN-dB-Gf9"/>
-                            <constraint firstItem="fho-MN-42S" firstAttribute="trailing" secondItem="QI1-du-umG" secondAttribute="trailing" constant="220" id="Yia-NI-HGz"/>
-                            <constraint firstItem="OZj-YH-sTC" firstAttribute="leading" secondItem="tEL-ao-GwR" secondAttribute="trailing" constant="65" id="Yrd-PR-Cto"/>
-                            <constraint firstItem="fho-MN-42S" firstAttribute="bottom" secondItem="ivP-qg-37Z" secondAttribute="bottom" constant="345" id="Ysl-In-6KV"/>
-                            <constraint firstItem="OZj-YH-sTC" firstAttribute="top" secondItem="ivP-qg-37Z" secondAttribute="bottom" constant="40" id="a23-8k-ULx"/>
-                            <constraint firstItem="ivP-qg-37Z" firstAttribute="leading" secondItem="9c5-Bz-gv0" secondAttribute="trailing" constant="65" id="c6e-Mu-hEd"/>
-                            <constraint firstItem="tEL-ao-GwR" firstAttribute="top" secondItem="9c5-Bz-gv0" secondAttribute="bottom" constant="40" id="frF-p9-x35"/>
-                            <constraint firstItem="fho-MN-42S" firstAttribute="bottom" secondItem="tEL-ao-GwR" secondAttribute="bottom" constant="220" id="ibE-KL-2CN"/>
-                            <constraint firstItem="fho-MN-42S" firstAttribute="bottom" secondItem="QI1-du-umG" secondAttribute="bottom" constant="470" id="kFT-Ks-3vZ"/>
-                            <constraint firstItem="B3E-ph-Vzj" firstAttribute="trailing" secondItem="jRI-3x-fIJ" secondAttribute="trailing" id="mfb-NW-uV8"/>
-                            <constraint firstItem="jRI-3x-fIJ" firstAttribute="leading" secondItem="QI1-du-umG" secondAttribute="trailing" constant="65" id="r6H-yW-jEE"/>
-                            <constraint firstItem="fho-MN-42S" firstAttribute="trailing" secondItem="OZj-YH-sTC" secondAttribute="trailing" constant="70" id="tOV-LD-uw9"/>
-                            <constraint firstItem="fho-MN-42S" firstAttribute="bottom" secondItem="jRI-3x-fIJ" secondAttribute="bottom" constant="470" id="uZs-14-J6q"/>
-                            <constraint firstItem="ivP-qg-37Z" firstAttribute="top" secondItem="jRI-3x-fIJ" secondAttribute="bottom" constant="40" id="vTW-qS-aDa"/>
-                            <constraint firstItem="fho-MN-42S" firstAttribute="trailing" secondItem="9c5-Bz-gv0" secondAttribute="trailing" constant="220" id="wCG-IL-MV3"/>
+                            <constraint firstItem="9c5-Bz-gv0" firstAttribute="leading" secondItem="fho-MN-42S" secondAttribute="leading" constant="70" id="12E-k5-Cc0"/>
+                            <constraint firstItem="QI1-du-umG" firstAttribute="top" secondItem="B3E-ph-Vzj" secondAttribute="bottom" constant="40" id="3w0-gt-7oz"/>
+                            <constraint firstItem="tEL-ao-GwR" firstAttribute="top" secondItem="9c5-Bz-gv0" secondAttribute="bottom" constant="40" id="60V-0v-99i"/>
+                            <constraint firstItem="fho-MN-42S" firstAttribute="trailing" secondItem="OZj-YH-sTC" secondAttribute="trailing" constant="70" id="8Kg-qR-eAt"/>
+                            <constraint firstItem="9c5-Bz-gv0" firstAttribute="width" secondItem="QI1-du-umG" secondAttribute="width" id="BGr-Eh-vMP"/>
+                            <constraint firstItem="OZj-YH-sTC" firstAttribute="height" secondItem="QI1-du-umG" secondAttribute="height" id="CqF-pA-z1a"/>
+                            <constraint firstItem="B3E-ph-Vzj" firstAttribute="top" secondItem="fho-MN-42S" secondAttribute="top" constant="21" id="JzG-Yy-9sB"/>
+                            <constraint firstItem="B3E-ph-Vzj" firstAttribute="leading" secondItem="fho-MN-42S" secondAttribute="leading" constant="75" id="LFf-zB-sqB"/>
+                            <constraint firstItem="OZj-YH-sTC" firstAttribute="top" secondItem="ivP-qg-37Z" secondAttribute="bottom" constant="40" id="OhF-sP-fc8"/>
+                            <constraint firstItem="tEL-ao-GwR" firstAttribute="leading" secondItem="fho-MN-42S" secondAttribute="leading" constant="70" id="QIn-6g-TFI"/>
+                            <constraint firstItem="fho-MN-42S" firstAttribute="trailing" secondItem="jRI-3x-fIJ" secondAttribute="trailing" constant="70" id="QMq-oc-pz8"/>
+                            <constraint firstItem="9c5-Bz-gv0" firstAttribute="height" secondItem="QI1-du-umG" secondAttribute="height" id="SPV-5V-Dsp"/>
+                            <constraint firstItem="tEL-ao-GwR" firstAttribute="width" secondItem="QI1-du-umG" secondAttribute="width" id="UEV-E2-izY"/>
+                            <constraint firstItem="tEL-ao-GwR" firstAttribute="height" secondItem="QI1-du-umG" secondAttribute="height" id="VGz-zR-cbY"/>
+                            <constraint firstItem="9c5-Bz-gv0" firstAttribute="top" secondItem="QI1-du-umG" secondAttribute="bottom" constant="40" id="YiP-Ig-VSZ"/>
+                            <constraint firstItem="jRI-3x-fIJ" firstAttribute="top" secondItem="B3E-ph-Vzj" secondAttribute="bottom" constant="40" id="akn-Ty-vx8"/>
+                            <constraint firstItem="QI1-du-umG" firstAttribute="leading" secondItem="fho-MN-42S" secondAttribute="leading" constant="70" id="cFo-nj-iFN"/>
+                            <constraint firstItem="ivP-qg-37Z" firstAttribute="height" secondItem="QI1-du-umG" secondAttribute="height" id="dJm-tn-AaV"/>
+                            <constraint firstItem="B3E-ph-Vzj" firstAttribute="centerX" secondItem="tuG-lf-DZ4" secondAttribute="centerX" id="faF-97-vmq"/>
+                            <constraint firstItem="OZj-YH-sTC" firstAttribute="width" secondItem="QI1-du-umG" secondAttribute="width" id="fw2-WK-Z4Z"/>
+                            <constraint firstItem="ivP-qg-37Z" firstAttribute="top" secondItem="jRI-3x-fIJ" secondAttribute="bottom" constant="40" id="kAe-yl-ZBf"/>
+                            <constraint firstItem="jRI-3x-fIJ" firstAttribute="top" secondItem="B3E-ph-Vzj" secondAttribute="bottom" constant="40" id="lom-AY-DUO"/>
+                            <constraint firstItem="jRI-3x-fIJ" firstAttribute="height" secondItem="QI1-du-umG" secondAttribute="height" id="mcE-hW-LHY"/>
+                            <constraint firstItem="jRI-3x-fIJ" firstAttribute="width" secondItem="QI1-du-umG" secondAttribute="width" id="p4m-3P-Q37"/>
+                            <constraint firstItem="ivP-qg-37Z" firstAttribute="width" secondItem="QI1-du-umG" secondAttribute="width" id="tIR-36-hmR"/>
+                            <constraint firstItem="fho-MN-42S" firstAttribute="trailing" secondItem="ivP-qg-37Z" secondAttribute="trailing" constant="70" id="twY-yk-kGv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fho-MN-42S"/>
                     </view>
@@ -136,9 +159,24 @@
             <point key="canvasLocation" x="748" y="124.58770614692655"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="906-qL-zFe">
+            <objects>
+                <viewController id="pFd-7w-YJa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Pm-rM-oXB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Bws-ff-X2E"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s2A-WP-yEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="875"/>
+        </scene>
+        <!--List View Controller-->
         <scene sceneID="DFP-cW-rZk">
             <objects>
-                <viewController id="AF0-ao-kfk" sceneMemberID="viewController">
+                <viewController id="AF0-ao-kfk" customClass="ListViewController" customModule="Moscow_Places" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9XY-g4-dBH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,10 +195,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3MD-bx-1Pk"/>
                     </view>
+                    <connections>
+                        <outlet property="TableList" destination="1hW-wE-3nJ" id="yMx-th-WqN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djs-If-clF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1592.8" y="122.78860569715144"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2LJ-zJ-vF7"/>
+    </inferredMetricsTieBreakers>
 </document>

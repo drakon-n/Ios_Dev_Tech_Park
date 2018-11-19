@@ -1,20 +1,17 @@
 //
-//  MenuViewController.swift
+//  RestoranTypeViewController.swift
 //  Moscow_Places
 //
-//  Created by Влад on 07/11/2018.
+//  Created by Влад on 18/11/2018.
 //  Copyright © 2018 Влад. All rights reserved.
 //
 
 import UIKit
 
-class MenuViewController: UIViewController {
-
-    @IBAction func StartTouch(_ sender: Any) {
-    }
+class RestoranTypeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
         // Do any additional setup after loading the view.
     }
     

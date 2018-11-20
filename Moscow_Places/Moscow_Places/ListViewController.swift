@@ -49,7 +49,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
                     self.fillModelArray(jsonResult)
                     self.tableList.reloadData()
                 }
-                print(jsonResult)
+            
             }catch let error{print(error)}
             }.resume()}
         

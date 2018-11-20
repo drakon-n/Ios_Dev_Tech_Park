@@ -35,18 +35,21 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svS-PP-WoE">
                                 <rect key="frame" x="130" y="134" width="115" height="57.5"/>
-                                <color key="backgroundColor" red="0.58049782815457385" green="1" blue="0.54503133203871779" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.75815626309999995" green="0.9016123412" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="svS-PP-WoE" secondAttribute="height" multiplier="2:1" id="b6y-wl-hFG"/>
                                 </constraints>
-                                <state key="normal" title="Start"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.52599440526280761" green="0.62660897378385805" blue="0.70128093274111669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="StartTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ueJ-JM-7kt"/>
                                     <segue destination="2Fv-gQ-M6v" kind="show" identifier="FirstSegue" id="kV5-Re-ONe"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.75815626305530537" green="0.90161234119700007" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.10245022922754288" green="0.13274821639060974" blue="0.17255595326423645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="svS-PP-WoE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="6Io-X8-ZV5"/>
                             <constraint firstItem="svS-PP-WoE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="F4s-kX-Yoq"/>
@@ -74,21 +77,27 @@
                                     <constraint firstAttribute="height" constant="85" id="Pln-4m-bFj"/>
                                     <constraint firstAttribute="width" constant="85" id="aZE-gf-Ktd"/>
                                 </constraints>
-                                <state key="normal" title="ТЦ"/>
+                                <state key="normal" title="ТЦ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="AF0-ao-kfk" kind="show" identifier="BP" id="TnA-x8-gqY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRI-3x-fIJ" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
                                 <rect key="frame" x="220" y="146" width="85" height="85"/>
-                                <state key="normal" title="Парки"/>
+                                <state key="normal" title="Парки">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="AF0-ao-kfk" kind="show" identifier="Parks" id="a9W-kk-B47"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivP-qg-37Z" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
                                 <rect key="frame" x="220" y="271" width="85" height="85"/>
-                                <state key="normal" title="Музеи"/>
+                                <state key="normal" title="Музеи">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="AF0-ao-kfk" kind="show" identifier="Museum" id="koC-08-4db"/>
                                 </connections>
@@ -96,21 +105,27 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9c5-Bz-gv0" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
                                 <rect key="frame" x="70" y="271" width="85" height="85"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Туризм"/>
+                                <state key="normal" title="Туризм">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="AF0-ao-kfk" kind="show" identifier="Tourism" id="2LJ-zJ-vF7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEL-ao-GwR" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
                                 <rect key="frame" x="70" y="396" width="85" height="85"/>
-                                <state key="normal" title="Рестораны"/>
+                                <state key="normal" title="Рестораны">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="pFd-7w-YJa" kind="show" identifier="Restoran" id="e2r-RO-vLw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZj-YH-sTC" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
                                 <rect key="frame" x="220" y="396" width="85" height="85"/>
-                                <state key="normal" title="Эвенты"/>
+                                <state key="normal" title="Эвенты">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="AF0-ao-kfk" kind="show" identifier="Events" id="gfc-tP-ljM"/>
                                 </connections>
@@ -118,11 +133,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите категорию" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3E-ph-Vzj">
                                 <rect key="frame" x="75" y="85" width="225" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.75815626309999995" green="0.9016123412" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.10245022922754288" green="0.13274821639060974" blue="0.17255595326423645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="9c5-Bz-gv0" firstAttribute="leading" secondItem="fho-MN-42S" secondAttribute="leading" constant="70" id="12E-k5-Cc0"/>
                             <constraint firstItem="QI1-du-umG" firstAttribute="top" secondItem="B3E-ph-Vzj" secondAttribute="bottom" constant="40" id="3w0-gt-7oz"/>
@@ -183,7 +198,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1hW-wE-3nJ">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.10241632909999999" green="0.13281205300000001" blue="0.16863393779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlaceCell" id="FcB-CH-4Fw" customClass="TableCell" customModule="Moscow_Places" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>

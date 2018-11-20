@@ -14,7 +14,7 @@ class RoundButton: UIButton {
         super.init(coder: aDecoder)
         self.layer.cornerRadius = self.frame.size.width / 2
         self.layer.masksToBounds = true
-        self.backgroundColor = UIColor.green
+        self.backgroundColor = #colorLiteral(red: 0.4996578097, green: 0.6304417253, blue: 0.7095039487, alpha: 1)
     }
     
     

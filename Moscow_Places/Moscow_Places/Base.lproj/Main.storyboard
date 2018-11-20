@@ -35,7 +35,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svS-PP-WoE">
                                 <rect key="frame" x="130" y="134" width="115" height="57.5"/>
-                                <color key="backgroundColor" red="0.75815626309999995" green="0.9016123412" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.52599440529999997" green="0.62660897380000002" blue="0.70128093270000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="svS-PP-WoE" secondAttribute="height" multiplier="2:1" id="b6y-wl-hFG"/>
                                 </constraints>
@@ -173,20 +173,76 @@
             </objects>
             <point key="canvasLocation" x="748" y="124.58770614692655"/>
         </scene>
-        <!--View Controller-->
+        <!--Restoran Type View Controller-->
         <scene sceneID="906-qL-zFe">
             <objects>
-                <viewController id="pFd-7w-YJa" sceneMemberID="viewController">
+                <viewController id="pFd-7w-YJa" customClass="RestoranTypeViewController" customModule="Moscow_Places" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Pm-rM-oXB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oi1-gM-rQr">
+                                <rect key="frame" x="110" y="144" width="154" height="43"/>
+                                <color key="backgroundColor" red="0.52599440529999997" green="0.62660897380000002" blue="0.70128093270000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Tr4-7X-M96"/>
+                                </constraints>
+                                <state key="normal" title="Элитные">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AF0-ao-kfk" kind="show" identifier="RestoranElite" id="Sxt-dq-2sy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFw-Iy-XER">
+                                <rect key="frame" x="110" y="257" width="154" height="43"/>
+                                <color key="backgroundColor" red="0.52599440529999997" green="0.62660897380000002" blue="0.70128093270000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Middle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AF0-ao-kfk" kind="show" identifier="MiddleRestoran" id="Vq3-Ob-Csa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cre-Iv-Xpx">
+                                <rect key="frame" x="110" y="370" width="154" height="43"/>
+                                <color key="backgroundColor" red="0.52599440529999997" green="0.62660897380000002" blue="0.70128093270000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Эконом">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AF0-ao-kfk" kind="show" identifier="RestoranEconom" id="Ker-kr-RZf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10241632909999999" green="0.13281205300000001" blue="0.16863393779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="cre-Iv-Xpx" firstAttribute="leading" secondItem="Bws-ff-X2E" secondAttribute="leading" constant="110" id="2Cf-A0-d3L"/>
+                            <constraint firstItem="UFw-Iy-XER" firstAttribute="height" secondItem="Oi1-gM-rQr" secondAttribute="height" id="3WS-sh-qtQ"/>
+                            <constraint firstItem="Bws-ff-X2E" firstAttribute="trailing" secondItem="Oi1-gM-rQr" secondAttribute="trailing" constant="111" id="3vb-yT-nCf"/>
+                            <constraint firstItem="cre-Iv-Xpx" firstAttribute="width" secondItem="Oi1-gM-rQr" secondAttribute="width" id="Ls2-ul-opv"/>
+                            <constraint firstItem="UFw-Iy-XER" firstAttribute="width" secondItem="Oi1-gM-rQr" secondAttribute="width" id="NQX-Cp-Kmr"/>
+                            <constraint firstItem="Bws-ff-X2E" firstAttribute="bottom" secondItem="Oi1-gM-rQr" secondAttribute="bottom" constant="480" id="Nnh-MT-bkb"/>
+                            <constraint firstItem="UFw-Iy-XER" firstAttribute="top" secondItem="Oi1-gM-rQr" secondAttribute="bottom" constant="70" id="OEu-lc-m1K"/>
+                            <constraint firstItem="cre-Iv-Xpx" firstAttribute="height" secondItem="Oi1-gM-rQr" secondAttribute="height" id="Py4-Lp-yHb"/>
+                            <constraint firstItem="Oi1-gM-rQr" firstAttribute="top" secondItem="Bws-ff-X2E" secondAttribute="top" constant="80" id="coq-Qc-vlk"/>
+                            <constraint firstItem="Bws-ff-X2E" firstAttribute="trailing" secondItem="UFw-Iy-XER" secondAttribute="trailing" constant="111" id="dxe-sI-2eY"/>
+                            <constraint firstItem="Oi1-gM-rQr" firstAttribute="leading" secondItem="Bws-ff-X2E" secondAttribute="leading" constant="110" id="h0d-fq-fP9"/>
+                            <constraint firstItem="UFw-Iy-XER" firstAttribute="leading" secondItem="Bws-ff-X2E" secondAttribute="leading" constant="110" id="uP3-ek-Lqj"/>
+                            <constraint firstItem="cre-Iv-Xpx" firstAttribute="top" secondItem="UFw-Iy-XER" secondAttribute="bottom" constant="70" id="v8F-2Z-Tuv"/>
+                            <constraint firstItem="Bws-ff-X2E" firstAttribute="trailing" secondItem="cre-Iv-Xpx" secondAttribute="trailing" constant="111" id="zY0-Bd-ttu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bws-ff-X2E"/>
                     </view>
+                    <connections>
+                        <outlet property="EconomButton" destination="cre-Iv-Xpx" id="QLi-Cs-zdv"/>
+                        <outlet property="EliteButton" destination="UFw-Iy-XER" id="As3-ep-2sj"/>
+                        <outlet property="MiddleButton" destination="UFw-Iy-XER" id="S14-mW-fDD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s2A-WP-yEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031" y="875"/>
+            <point key="canvasLocation" x="748" y="954"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="DFP-cW-rZk">
@@ -230,6 +286,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="a9W-kk-B47"/>
+        <segue reference="Vq3-Ob-Csa"/>
     </inferredMetricsTieBreakers>
 </document>

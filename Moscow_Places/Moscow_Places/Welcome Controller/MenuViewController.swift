@@ -11,7 +11,7 @@ struct listArr:Codable{
 struct list:Codable{
     let name: String
 }
-    let listAr:[list]
+    let places:[list]
 }
 class MenuViewController: UIViewController {
 
@@ -19,11 +19,10 @@ class MenuViewController: UIViewController {
 		super.viewDidLoad()
 	}
     override func prepare(for segue: UIStoryboardSegue, sender:Any?) {
-        if segue.identifier == "Parks" {
             //let indexPath = tableView.indexPathForSelectedRow
             let finishResult = segue.destination as? ListViewController
             //finishResult?.LastField.text = "\(anime[indexPath?.row ?? 12])"
-            //finishResult?.textOfLabel = "\(anime[indexPath?.row ?? 1])"
-        }}
+        finishResult?.category = "\(segue.identifier ?? "error")"
+        }
 }
 

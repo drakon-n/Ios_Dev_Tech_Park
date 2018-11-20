@@ -10,6 +10,7 @@ import UIKit
 
 class TableCell: UITableViewCell {
 
+    @IBOutlet weak var Title: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,7 +22,7 @@ class TableCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func fillCell(with model: CellModel) {
-        
+        Title.text = model.title
     }
     
 }

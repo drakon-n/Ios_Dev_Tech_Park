@@ -301,18 +301,25 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2qq-d8-W82">
                                 <rect key="frame" x="16" y="122" width="343" height="175"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vVe-dY-zVE">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vVe-dY-zVE">
                                 <rect key="frame" x="16" y="305" width="343" height="342"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OO4-zR-Fzs">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OO4-zR-Fzs">
                                         <rect key="frame" x="8" y="8" width="327" height="326"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.10245022922754288" green="0.13274821639060974" blue="0.17255595326423645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="OO4-zR-Fzs" firstAttribute="bottom" secondItem="vVe-dY-zVE" secondAttribute="bottomMargin" id="3iq-wd-pm4"/>
+                                    <constraint firstItem="OO4-zR-Fzs" firstAttribute="leading" secondItem="vVe-dY-zVE" secondAttribute="leadingMargin" id="OTd-a6-gyX"/>
+                                    <constraint firstItem="OO4-zR-Fzs" firstAttribute="centerY" secondItem="vVe-dY-zVE" secondAttribute="centerY" id="Xva-aa-QE4"/>
+                                    <constraint firstItem="OO4-zR-Fzs" firstAttribute="centerX" secondItem="vVe-dY-zVE" secondAttribute="centerX" id="iu3-JE-m4o"/>
+                                    <constraint firstItem="OO4-zR-Fzs" firstAttribute="top" secondItem="vVe-dY-zVE" secondAttribute="topMargin" id="n4n-gp-5VT"/>
+                                    <constraint firstItem="OO4-zR-Fzs" firstAttribute="trailing" secondItem="vVe-dY-zVE" secondAttribute="trailingMargin" id="qjd-bx-3H6"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.10241632908582687" green="0.13281205296516418" blue="0.16863393783569336" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

@@ -139,6 +139,24 @@
 			path = ListView;
 			sourceTree = "<group>";
 		};
+		71AF3F8821A5A74300ED2955 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				71B789FF219C476400EC464F /* TableCell.xib */,
+				71B789FE219C476400EC464F /* TableCell.swift */,
+				71B78A02219C47B200EC464F /* CellModel.swift */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		71AF3F8921A5A76700ED2955 /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				71AB31E3219C348100F8E88C /* RoundButton.swift */,
+			);
+			path = "Custom UI";
+			sourceTree = "<group>";
+		};
 		71BE5B322180A1B000861992 = {
 			isa = PBXGroup;
 			children = (
@@ -164,17 +182,15 @@
 		71BE5B3D2180A1B000861992 /* Moscow_Places */ = {
 			isa = PBXGroup;
 			children = (
-				71BE5B3E2180A1B000861992 /* AppDelegate.swift */,
 				71BE5B422180A1B000861992 /* Main.storyboard */,
-				71AF3F8521A5947E00ED2955 /* ListView */,
-				71AF3F8321A591E400ED2955 /* PlaceViewController.swift */,
-				7147D78921A18E9A00ADC9E6 /* RestoranTypeViewController.swift */,
-				71B789FE219C476400EC464F /* TableCell.swift */,
-				71B78A02219C47B200EC464F /* CellModel.swift */,
-				71B789FF219C476400EC464F /* TableCell.xib */,
-				71AB31E3219C348100F8E88C /* RoundButton.swift */,
-				71491CE421930DC400A9C8D3 /* MenuViewController.swift */,
+				71BE5B3E2180A1B000861992 /* AppDelegate.swift */,
 				71491CF221930FBC00A9C8D3 /* WelcomeViewController.swift */,
+				71491CE421930DC400A9C8D3 /* MenuViewController.swift */,
+				7147D78921A18E9A00ADC9E6 /* RestoranTypeViewController.swift */,
+				71AF3F8321A591E400ED2955 /* PlaceViewController.swift */,
+				71AF3F8921A5A76700ED2955 /* Custom UI */,
+				71AF3F8521A5947E00ED2955 /* ListView */,
+				71AF3F8821A5A74300ED2955 /* TableCell */,
 				71BE5B452180A1B100861992 /* Assets.xcassets */,
 				71BE5B472180A1B100861992 /* LaunchScreen.storyboard */,
 				71BE5B4A2180A1B100861992 /* Info.plist */,

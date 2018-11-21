@@ -3,12 +3,12 @@
 		{
 			"name": "Стэйк Хаус Бутчер",
 			"cellname" : "butcher",
-			"image": " "
+			"image": "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/butcher.jpg"
 		},
 		{
     			"name": "SAVVA",
 			"cellname" : "savva",
-			"image": " "
+			"image": "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/savva.jpg"
 		}
 	]
 }

@@ -304,7 +304,7 @@
                                     <constraint firstAttribute="height" constant="47" id="gTl-Xy-oZG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yfl-eB-5Ib">
@@ -312,8 +312,7 @@
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HbT-Ma-Ih7">
                                         <rect key="frame" x="8" y="8" width="327" height="350"/>
-                                        <color key="backgroundColor" red="0.10241632909999999" green="0.13281205300000001" blue="0.16863393779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -328,7 +327,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.10241632908582687" green="0.13281205296516418" blue="0.16863393783569336" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Fez-uH-tr2" firstAttribute="leading" secondItem="MVy-jg-7da" secondAttribute="leadingMargin" id="54k-7K-3O6"/>
                             <constraint firstItem="Fez-uH-tr2" firstAttribute="top" secondItem="130-SS-Edp" secondAttribute="top" id="82d-ax-fDF"/>
@@ -344,11 +343,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="130-SS-Edp"/>
                     </view>
-                    <connections>
-                        <outlet property="Title" destination="Fez-uH-tr2" id="OVr-D6-XXz"/>
-                        <outlet property="TitleLogo" destination="xfX-61-uPI" id="5A4-dQ-blG"/>
-                        <outlet property="textDescription" destination="HbT-Ma-Ih7" id="pn4-cm-VHO"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3p-ez-DBG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -356,6 +350,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="a9W-kk-B47"/>
+        <segue reference="Vq3-Ob-Csa"/>
     </inferredMetricsTieBreakers>
 </document>

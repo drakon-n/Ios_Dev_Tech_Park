@@ -7,14 +7,7 @@
 //
 
 import UIKit
-struct listArr:Codable{
-struct list:Codable{
-    let name: String
-    let cellname: String
-    let image: URL
-}
-    let places:[list]
-}
+
 class MenuViewController: UIViewController
 {
 

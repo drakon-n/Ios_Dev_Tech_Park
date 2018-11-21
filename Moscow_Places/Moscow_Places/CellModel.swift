@@ -11,5 +11,5 @@ import UIKit
 
 class CellModel {
     var title: String?
-    var image: UIImage?
+    var image: String?
 }

@@ -15,6 +15,17 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
        return modelArray.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 240
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        
+        performSegue(withIdentifier: "GoPlace", sender: nil)
+    
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = modelArray[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
@@ -26,6 +37,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var modelArray = [CellModel]()
     var category:String = ""
+    var identifier: String = ""
     let cellIdentifier = "TableCell"
     @IBOutlet weak var tableList: UITableView!
     
@@ -57,9 +69,17 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     func fillModelArray(_ mass: listArr) {
         for i in 1...mass.places.count {
             let model = CellModel()
+            model.image = "\(mass.places[i-1].image)"
             model.title = "\(mass.places[i-1].name)"
+            identifier = mass.places[i-1].cellname
             modelArray.append(model)
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender:Any?){
+        
+        let finishResult = segue.destination as? PlaceViewController
+        finishResult?.identifier = "\(self.identifier)"
     }
     /*
     // MARK: - Navigation

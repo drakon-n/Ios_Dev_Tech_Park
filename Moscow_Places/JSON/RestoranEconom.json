@@ -3,12 +3,12 @@
 		{
 			"name": "Му-Му",
 			"cellname" : "mumu",
-			"image": " "
+			"image": "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/mumu.jpg"
 		},
 		{
     			"name": "Вареничная №1"
 			"cellname" : "varenik1"
-			"image": " "
+			"image": " https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/varenik1.jpg"
 		}
 	]
 }

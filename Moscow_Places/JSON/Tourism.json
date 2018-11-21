@@ -3,12 +3,12 @@
 		{
 			"name": "Красная площадь",
 			"cellname" : "redsquare",
-			"image": " "
+			"image": "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/redsquare.jpg"
 		},
 		{
     			"name": "Александровский сад",
 			"cellname" : "alexandrovsad",
-			"image": " "
+			"image": "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/alexandrsad.jpg"
 		}
 	]
 }

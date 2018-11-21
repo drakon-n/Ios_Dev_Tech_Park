@@ -3,12 +3,12 @@
 		{
 			"name": "Третьяковская галерея",
 			"cellname" : "tretyakovka",
-			"image" : " "
+			"image" : "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/tretyakovka.jpg"
 		},
 		{
     			"name": "музей Пушкина",
 			"cellname": "pushkinmuseum",
-			"image": " "
+			"image": "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/puskinmuseum.jpg"
 		}
 	]
 }

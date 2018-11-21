@@ -12,6 +12,8 @@
 		71491CEA21930DC400A9C8D3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CE421930DC400A9C8D3 /* MenuViewController.swift */; };
 		71491CF321930FBC00A9C8D3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CF221930FBC00A9C8D3 /* WelcomeViewController.swift */; };
 		71AB31E4219C348100F8E88C /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AB31E3219C348100F8E88C /* RoundButton.swift */; };
+		71AF3F8421A591E400ED2955 /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AF3F8321A591E400ED2955 /* PlaceViewController.swift */; };
+		71AF3F8721A594A700ED2955 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AF3F8621A594A700ED2955 /* ListModel.swift */; };
 		71B78A00219C476400EC464F /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B789FE219C476400EC464F /* TableCell.swift */; };
 		71B78A01219C476400EC464F /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B789FF219C476400EC464F /* TableCell.xib */; };
 		71B78A03219C47B200EC464F /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B78A02219C47B200EC464F /* CellModel.swift */; };
@@ -54,6 +56,8 @@
 		71491CE421930DC400A9C8D3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		71491CF221930FBC00A9C8D3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		71AB31E3219C348100F8E88C /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		71AF3F8321A591E400ED2955 /* PlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
+		71AF3F8621A594A700ED2955 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 		71B789FE219C476400EC464F /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		71B789FF219C476400EC464F /* TableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 		71B78A02219C47B200EC464F /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
@@ -126,6 +130,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		71AF3F8521A5947E00ED2955 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				7147D78B21A195E500ADC9E6 /* ListViewController.swift */,
+				71AF3F8621A594A700ED2955 /* ListModel.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
 		71BE5B322180A1B000861992 = {
 			isa = PBXGroup;
 			children = (
@@ -153,7 +166,8 @@
 			children = (
 				71BE5B3E2180A1B000861992 /* AppDelegate.swift */,
 				71BE5B422180A1B000861992 /* Main.storyboard */,
-				7147D78B21A195E500ADC9E6 /* ListViewController.swift */,
+				71AF3F8521A5947E00ED2955 /* ListView */,
+				71AF3F8321A591E400ED2955 /* PlaceViewController.swift */,
 				7147D78921A18E9A00ADC9E6 /* RestoranTypeViewController.swift */,
 				71B789FE219C476400EC464F /* TableCell.swift */,
 				71B78A02219C47B200EC464F /* CellModel.swift */,
@@ -416,11 +430,13 @@
 				71B78A03219C47B200EC464F /* CellModel.swift in Sources */,
 				71B78A00219C476400EC464F /* TableCell.swift in Sources */,
 				7147D78A21A18E9A00ADC9E6 /* RestoranTypeViewController.swift in Sources */,
+				71AF3F8421A591E400ED2955 /* PlaceViewController.swift in Sources */,
 				71AB31E4219C348100F8E88C /* RoundButton.swift in Sources */,
 				71491CEA21930DC400A9C8D3 /* MenuViewController.swift in Sources */,
 				71BE5B3F2180A1B000861992 /* AppDelegate.swift in Sources */,
 				7147D78C21A195E500ADC9E6 /* ListViewController.swift in Sources */,
 				71491CF321930FBC00A9C8D3 /* WelcomeViewController.swift in Sources */,
+				71AF3F8721A594A700ED2955 /* ListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

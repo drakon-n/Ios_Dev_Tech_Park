@@ -3,12 +3,12 @@
 		{
 			"name": "Шоколадница",
 			"cellname" : "shokoladnitsa",
-			"image": " "
+			"image": "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/shokoladnitsa.jpg"
 		},
 		{
     			"name": "Тануки",
 			"cellname" : "tanuki",
-			"image": " "
+			"image": "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/tanuki.jpg"
 		}
 	]
 }

@@ -2,10 +2,10 @@
 	"places": [{
 		"name": "Парк Горькова",
 		"cellname" : "gorkovpark",
-		"image": " "
+		"image": "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/gorkovpark.jpg"
 	}, {
 		"name": "Лефортовский парк",
 		"cellname" : "lefortovopark",
-		"image": " "
+		"image": "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/lefortovopark.jpg"
 	}]
 }

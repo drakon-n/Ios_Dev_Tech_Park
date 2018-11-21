@@ -14,9 +14,9 @@ class TableCell: UITableViewCell {
     @IBOutlet weak var Title: UILabel!
     @IBOutlet weak var PlaceImage: UIImageView!
     required init?(coder aDecoder: NSCoder)
-    {   super.init(coder: aDecoder)
-       
-       self.backgroundColor = #colorLiteral(red: 0.09432386607, green: 0.1339568198, blue: 0.1721197665, alpha: 1)
+    {
+        super.init(coder: aDecoder)
+        self.backgroundColor = #colorLiteral(red: 0.09432386607, green: 0.1339568198, blue: 0.1721197665, alpha: 1)
         
     }
     override func awakeFromNib() {
@@ -29,7 +29,8 @@ class TableCell: UITableViewCell {
     
     func fillCell(with model: CellModel) {
         Title.text = model.title
-        PlaceImage.image = model.image
+        let url = URL(string: model.image ?? "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/error.jpg")
+        PlaceImage.kf.setImage(with: url)
     }
     
 }

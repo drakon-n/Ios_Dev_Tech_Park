@@ -10,14 +10,16 @@ import UIKit
 
 class PlaceViewController: UIViewController {
     var identifier: String = ""
-    @IBOutlet weak var titleName: UILabel!
-    @IBOutlet weak var titleLogo: UIImageView!
-    @IBOutlet weak var textDescription: UITextView!
+    
+    @IBOutlet weak var PlaceName: UILabel!
+    @IBOutlet weak var PlaceLogo: UIImageView!
+    @IBOutlet weak var PlaceDescription: UITextView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let sourceURL = "https://raw.githubusercontent.com/techparkios/ios-lectures-fall-2018/master/06/\(identifier).json"
+     
+        let sourceURL = "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/JSON/Places/\(identifier).json"
         
         guard let urlJson = URL(string: sourceURL)else{return}
         
@@ -32,9 +34,9 @@ class PlaceViewController: UIViewController {
                     let jsonResult = try JSONDecoder().decode(place.self, from: data2)
                     DispatchQueue.main.async {
                         let url = URL(string: jsonResult.image)
-                        self.titleLogo.kf.setImage(with: url)
-                        self.textDescription.text = jsonResult.description
-                        self.titleName.text = jsonResult.title
+                        self.PlaceLogo.kf.setImage(with: url)
+                        self.PlaceDescription.text = jsonResult.description
+                        self.PlaceName.text = jsonResult.title
                         
                     }
                 
@@ -43,7 +45,7 @@ class PlaceViewController: UIViewController {
                     }
             }.resume()
         }
-        
+ 
     }
     
 

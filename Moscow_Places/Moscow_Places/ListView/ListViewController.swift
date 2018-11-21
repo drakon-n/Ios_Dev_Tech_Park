@@ -36,8 +36,9 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     var modelArray = [CellModel]()
-    var category:String = ""
-    var identifier: String = ""
+    var category:String = " "
+    var identifier: [String] = []
+    
     let cellIdentifier = "TableCell"
     @IBOutlet weak var tableList: UITableView!
     
@@ -47,7 +48,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableList.dataSource = self
         tableList.register(UINib.init(nibName: "TableCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
         
-    
+        
+        
         let sourceURL = "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/JSON/\(category).json"
         
         DispatchQueue.global().async {
@@ -71,7 +73,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             let model = CellModel()
             model.image = "\(mass.places[i-1].image)"
             model.title = "\(mass.places[i-1].name)"
-            identifier = mass.places[i-1].cellname
+            identifier.append(mass.places[i-1].cellname)
             modelArray.append(model)
         }
     }
@@ -79,7 +81,9 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func prepare(for segue: UIStoryboardSegue, sender:Any?){
         
         let finishResult = segue.destination as? PlaceViewController
-        finishResult?.identifier = "\(self.identifier)"
+        
+        let indexPath = tableList.indexPathForSelectedRow
+        finishResult?.identifier = "\(self.identifier[indexPath?.row ?? 1])"
     }
     /*
     // MARK: - Navigation

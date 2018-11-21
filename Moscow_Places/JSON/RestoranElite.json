@@ -1,10 +1,14 @@
 {"places":
 	[
 		{
-			"name": "Стэйк Хаус Бутчер"
+			"name": "Стэйк Хаус Бутчер",
+			"cellname" : "butcher",
+			"image": " "
 		},
 		{
-    			"name": "SAVVA"
+    			"name": "SAVVA",
+			"cellname" : "savva",
+			"image": " "
 		}
 	]
 }

@@ -7,7 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
 class CellModel {
     var title: String?
+    var image: UIImage?
 }

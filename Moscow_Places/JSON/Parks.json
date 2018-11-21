@@ -1,7 +1,11 @@
 {
 	"places": [{
-		"name": "Парк Горькова"
+		"name": "Парк Горькова",
+		"cellname" : "gorkovpark",
+		"image": " "
 	}, {
-		"name": "Лефортовский парк"
+		"name": "Лефортовский парк",
+		"cellname" : "lefortovopark",
+		"image": " "
 	}]
 }

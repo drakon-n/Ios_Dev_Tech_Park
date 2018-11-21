@@ -1,10 +1,14 @@
 {"places":
 	[
 		{
-			"name": "Атриум"
+			"name": "Атриум",
+			"cellname":"atrium",
+			"image": " "
 		},
 		{
-    			"name": "Европейский"
+    			"name": "Европейский",
+			"cellname" : "europian",
+			"image" : " "
 		}
 	]
 }

@@ -1,10 +1,14 @@
 {"places":
 	[
 		{
-			"name": "Третьяковская галерея"
+			"name": "Третьяковская галерея",
+			"cellname" : "tretyakovka",
+			"image" : " "
 		},
 		{
-    			"name": "музей Пушкина"
+    			"name": "музей Пушкина",
+			"cellname": "pushkinmuseum",
+			"image": " "
 		}
 	]
 }

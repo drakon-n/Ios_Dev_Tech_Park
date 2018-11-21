@@ -1,5 +1,5 @@
 //
-//  WelcomeViewController.swift
+//  MenuViewController.swift
 //  Moscow_Places
 //
 //  Created by Влад on 07/11/2018.
@@ -10,19 +10,24 @@ import UIKit
 struct listArr:Codable{
 struct list:Codable{
     let name: String
+    let cellname: String
+    let image: String
 }
     let places:[list]
 }
-class MenuViewController: UIViewController {
+class MenuViewController: UIViewController
+{
 
-	override func viewDidLoad() {
+	override func viewDidLoad()
+    {
 		super.viewDidLoad()
 	}
-    override func prepare(for segue: UIStoryboardSegue, sender:Any?) {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender:Any?)
+    {
             //let indexPath = tableView.indexPathForSelectedRow
-            let finishResult = segue.destination as? ListViewController
-            //finishResult?.LastField.text = "\(anime[indexPath?.row ?? 12])"
+        let finishResult = segue.destination as? ListViewController
         finishResult?.category = "\(segue.identifier ?? "error")"
-        }
+    }
 }
 

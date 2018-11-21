@@ -1,10 +1,14 @@
 {"places":
 	[
 		{
-			"name": "Му-Му"
+			"name": "Му-Му",
+			"cellname" : "mumu",
+			"image": " "
 		},
 		{
     			"name": "Вареничная №1"
+			"cellname" : "varenik1"
+			"image": " "
 		}
 	]
 }

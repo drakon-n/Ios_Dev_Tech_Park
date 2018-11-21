@@ -201,7 +201,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="AF0-ao-kfk" kind="show" identifier="MiddleRestoran" id="Vq3-Ob-Csa"/>
+                                    <segue destination="AF0-ao-kfk" kind="show" identifier="RestoranMiddle" id="Vq3-Ob-Csa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cre-Iv-Xpx">

@@ -1,10 +1,14 @@
 {"places":
 	[
 		{
-			"name": "Красная площадь"
+			"name": "Красная площадь",
+			"cellname" : "redsquare",
+			"image": " "
 		},
 		{
-    			"name": "Александровский сад"
+    			"name": "Александровский сад",
+			"cellname" : "alexandrovsad",
+			"image": " "
 		}
 	]
 }

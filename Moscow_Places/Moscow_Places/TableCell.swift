@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Kingfisher
 
 class TableCell: UITableViewCell {
     
     @IBOutlet weak var Title: UILabel!
+    @IBOutlet weak var PlaceImage: UIImageView!
     required init?(coder aDecoder: NSCoder)
     {   super.init(coder: aDecoder)
        
@@ -19,16 +21,15 @@ class TableCell: UITableViewCell {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
+    
     func fillCell(with model: CellModel) {
         Title.text = model.title
+        PlaceImage.image = model.image
     }
     
 }

@@ -3,12 +3,12 @@
 		{
 			"name": "Атриум",
 			"cellname":"atrium",
-			"image": " "
+			"image": "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/atrium.jpg"
 		},
 		{
     			"name": "Европейский",
 			"cellname" : "europian",
-			"image" : " "
+			"image" : "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/europian.jpg"
 		}
 	]
 }

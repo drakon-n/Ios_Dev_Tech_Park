@@ -11,7 +11,7 @@ struct listArr:Codable{
 struct list:Codable{
     let name: String
     let cellname: String
-    let image: String
+    let image: URL
 }
     let places:[list]
 }

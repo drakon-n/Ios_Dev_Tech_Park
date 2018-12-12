@@ -11,6 +11,7 @@
 		7147D78C21A195E500ADC9E6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147D78B21A195E500ADC9E6 /* ListViewController.swift */; };
 		71491CEA21930DC400A9C8D3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CE421930DC400A9C8D3 /* MenuViewController.swift */; };
 		71491CF321930FBC00A9C8D3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71491CF221930FBC00A9C8D3 /* WelcomeViewController.swift */; };
+		715074CD21C1560A00D3F2BB /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715074CC21C1560A00D3F2BB /* MapController.swift */; };
 		71AB31E4219C348100F8E88C /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AB31E3219C348100F8E88C /* RoundButton.swift */; };
 		71AF3F8421A591E400ED2955 /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AF3F8321A591E400ED2955 /* PlaceViewController.swift */; };
 		71AF3F8721A594A700ED2955 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AF3F8621A594A700ED2955 /* ListModel.swift */; };
@@ -55,6 +56,7 @@
 		7147D78B21A195E500ADC9E6 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		71491CE421930DC400A9C8D3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		71491CF221930FBC00A9C8D3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		715074CC21C1560A00D3F2BB /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		71AB31E3219C348100F8E88C /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		71AF3F8321A591E400ED2955 /* PlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
 		71AF3F8621A594A700ED2955 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				71BE5B422180A1B000861992 /* Main.storyboard */,
+				715074CC21C1560A00D3F2BB /* MapController.swift */,
 				71BE5B3E2180A1B000861992 /* AppDelegate.swift */,
 				71491CF221930FBC00A9C8D3 /* WelcomeViewController.swift */,
 				71491CE421930DC400A9C8D3 /* MenuViewController.swift */,
@@ -446,6 +449,7 @@
 				71B78A03219C47B200EC464F /* CellModel.swift in Sources */,
 				71B78A00219C476400EC464F /* TableCell.swift in Sources */,
 				7147D78A21A18E9A00ADC9E6 /* RestoranTypeViewController.swift in Sources */,
+				715074CD21C1560A00D3F2BB /* MapController.swift in Sources */,
 				71AF3F8421A591E400ED2955 /* PlaceViewController.swift in Sources */,
 				71AB31E4219C348100F8E88C /* RoundButton.swift in Sources */,
 				71491CEA21930DC400A9C8D3 /* MenuViewController.swift in Sources */,

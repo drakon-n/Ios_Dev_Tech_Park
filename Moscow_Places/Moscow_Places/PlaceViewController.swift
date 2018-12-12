@@ -7,18 +7,20 @@
 //
 
 import UIKit
+import CoreLocation
 
-class PlaceViewController: UIViewController {
+class PlaceViewController: UIViewController, CLLocationManagerDelegate{
     var identifier: String = ""
     
-    @IBOutlet weak var PlaceName: UILabel!
-    @IBOutlet weak var PlaceLogo: UIImageView!
-    @IBOutlet weak var PlaceDescription: UITextView!
+    @IBOutlet weak var placeName: UILabel!
+    @IBOutlet weak var placeLogo: UIImageView!
+    @IBOutlet weak var placeDescription: UITextView!
+    var locationManager: CLLocationManager = CLLocationManager()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+     locationManager.delegate = self
         let sourceURL = "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/JSON/Places/\(identifier).json"
         
         guard let urlJson = URL(string: sourceURL)else{return}
@@ -34,9 +36,9 @@ class PlaceViewController: UIViewController {
                     let jsonResult = try JSONDecoder().decode(place.self, from: data2)
                     DispatchQueue.main.async {
                         let url = URL(string: jsonResult.image)
-                        self.PlaceLogo.kf.setImage(with: url)
-                        self.PlaceDescription.text = jsonResult.description
-                        self.PlaceName.text = jsonResult.title
+                        self.placeLogo.kf.setImage(with: url)
+                        self.placeDescription.text = jsonResult.description
+                        self.placeName.text = jsonResult.title
                         
                     }
                 
@@ -48,15 +50,10 @@ class PlaceViewController: UIViewController {
  
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func prepare(for segue: UIStoryboardSegue, sender:Any?)
+    {
+        let finishResult = segue.destination as? MapController
+        
+        finishResult?.sourceAnnotation.title = "\(placeName.text ?? "ошибка")"
     }
-    */
-
 }

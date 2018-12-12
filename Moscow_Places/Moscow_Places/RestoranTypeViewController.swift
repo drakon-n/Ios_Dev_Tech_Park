@@ -9,9 +9,9 @@
 import UIKit
 
 class RestoranTypeViewController: UIViewController{
-    @IBOutlet weak var EconomButton: UIButton!
-    @IBOutlet weak var MiddleButton: UIButton!
-    @IBOutlet weak var EliteButton: UIButton!
+    @IBOutlet weak var economButton: UIButton!
+    @IBOutlet weak var middleButton: UIButton!
+    @IBOutlet weak var eliteButton: UIButton!
     
     override func viewDidLoad(){
         super.viewDidLoad()

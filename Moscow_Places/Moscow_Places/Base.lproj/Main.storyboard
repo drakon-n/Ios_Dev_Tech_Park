@@ -321,6 +321,18 @@
                                     <constraint firstItem="OO4-zR-Fzs" firstAttribute="trailing" secondItem="vVe-dY-zVE" secondAttribute="trailingMargin" id="qjd-bx-3H6"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syy-JI-wrn" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
+                                <rect key="frame" x="325" y="122" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="BHn-V4-0ED"/>
+                                </constraints>
+                                <state key="normal" title="Map">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="O4b-rp-1Hy" kind="show" id="B2L-YU-fJO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.10241632908582687" green="0.13281205296516418" blue="0.16863393783569336" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -331,11 +343,14 @@
                             <constraint firstItem="2qq-d8-W82" firstAttribute="top" secondItem="pV6-v2-Xev" secondAttribute="bottom" constant="8" symbolic="YES" id="Piv-3M-ddL"/>
                             <constraint firstAttribute="bottom" secondItem="vVe-dY-zVE" secondAttribute="bottom" constant="20" symbolic="YES" id="Qaf-Li-nvI"/>
                             <constraint firstItem="vVe-dY-zVE" firstAttribute="top" secondItem="2qq-d8-W82" secondAttribute="bottom" constant="8" symbolic="YES" id="RGw-V5-tM7"/>
+                            <constraint firstItem="syy-JI-wrn" firstAttribute="top" secondItem="2qq-d8-W82" secondAttribute="top" id="SUZ-uC-dBP"/>
                             <constraint firstItem="vVe-dY-zVE" firstAttribute="leading" secondItem="2qq-d8-W82" secondAttribute="leading" id="T3s-z1-7iT"/>
+                            <constraint firstItem="syy-JI-wrn" firstAttribute="trailing" secondItem="pV6-v2-Xev" secondAttribute="trailing" id="k1v-iK-aXo"/>
                             <constraint firstItem="vVe-dY-zVE" firstAttribute="trailing" secondItem="2qq-d8-W82" secondAttribute="trailing" id="nxh-At-bhI"/>
                             <constraint firstItem="pV6-v2-Xev" firstAttribute="trailing" secondItem="MVy-jg-7da" secondAttribute="trailingMargin" id="pWc-PN-a1d"/>
                             <constraint firstItem="2qq-d8-W82" firstAttribute="leading" secondItem="pV6-v2-Xev" secondAttribute="leading" id="sPT-Cx-KP8"/>
                             <constraint firstItem="130-SS-Edp" firstAttribute="bottom" secondItem="2qq-d8-W82" secondAttribute="bottom" constant="370" id="vUg-7T-Jkd"/>
+                            <constraint firstItem="syy-JI-wrn" firstAttribute="leading" secondItem="130-SS-Edp" secondAttribute="leading" constant="325" id="zZK-AB-Id3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="130-SS-Edp"/>
                     </view>
@@ -348,6 +363,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3p-ez-DBG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2392.8000000000002" y="123.68815592203899"/>
+        </scene>
+        <!--Map Controller-->
+        <scene sceneID="ov2-5j-cF0">
+            <objects>
+                <viewController id="O4b-rp-1Hy" customClass="MapController" customModule="Moscow_Places" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d0e-LZ-mao">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="oCg-j4-fbL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cU4-et-DQf"/>
+                    </view>
+                    <connections>
+                        <outlet property="locationMap" destination="oCg-j4-fbL" id="bLJ-vQ-cDP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FQg-d2-PsW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3149.5999999999999" y="122.78860569715144"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

@@ -54,6 +54,6 @@ class PlaceViewController: UIViewController, CLLocationManagerDelegate{
     {
         let finishResult = segue.destination as? MapController
         
-        finishResult?.sourceAnnotation.title = "\(placeName.text ?? "ошибка")"
+        finishResult?.text = "\(placeName.text ?? "ошибка")"
     }
 }

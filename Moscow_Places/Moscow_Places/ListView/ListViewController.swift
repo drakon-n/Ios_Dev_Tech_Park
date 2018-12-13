@@ -76,13 +76,6 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             identifier.append(elm.cellname)
             modelArray.append(model)
         }
-       /* for i in 0..<mass.places.count {
-            let model = CellModel()
-            model.image = "\(mass.places[i].image)"
-            model.title = "\(mass.places[i].name)"
-            identifier.append(mass.places[i].cellname)
-            modelArray.append(model)
-        } */
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender:Any?){

@@ -16,7 +16,7 @@ class PlaceViewController: UIViewController, CLLocationManagerDelegate{
     @IBOutlet weak var placeLogo: UIImageView!
     @IBOutlet weak var placeDescription: UITextView!
     var locationManager: CLLocationManager = CLLocationManager()
-    
+    var loc:location = location(long: 0.0, width: 0.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +39,7 @@ class PlaceViewController: UIViewController, CLLocationManagerDelegate{
                         self.placeLogo.kf.setImage(with: url)
                         self.placeDescription.text = jsonResult.description
                         self.placeName.text = jsonResult.title
-                        
+                        self.loc = location(long: jsonResult.longitude, width: jsonResult.latitude)
                     }
                 
                 }   catch let error{
@@ -55,5 +55,6 @@ class PlaceViewController: UIViewController, CLLocationManagerDelegate{
         let finishResult = segue.destination as? MapController
         
         finishResult?.text = "\(placeName.text ?? "ошибка")"
+        finishResult?.selfLoc = location(long: loc.long, width: loc.width)
     }
 }

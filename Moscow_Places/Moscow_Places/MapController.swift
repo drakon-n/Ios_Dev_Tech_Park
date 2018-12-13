@@ -11,11 +11,11 @@ import MapKit
 
 class MapController: UIViewController, MKMapViewDelegate {
     var text: String = ""
-
+    var selfLoc: location = location(long: 0, width: 0)
     @IBOutlet weak var locationMap: MKMapView!
     override func viewDidLoad() {
         locationMap.delegate = self
-        let sourceLocation = CLLocationCoordinate2D(latitude: 55.75370, longitude: 37.61981) //показывает координаты красной площади, скоро допилю jsonы и будет показывать координаты локации
+        let sourceLocation = CLLocationCoordinate2D(latitude: 55.75370, longitude: 37.61981) 
         let sourcePlacemark = MKPlacemark(coordinate: sourceLocation, addressDictionary: nil)
        let sourceAnnotation = MKPointAnnotation()
         sourceAnnotation.title = text

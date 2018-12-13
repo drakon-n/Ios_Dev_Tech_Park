@@ -7,7 +7,10 @@
 //
 
 import Foundation
-
+struct location {
+    let long: Double
+    let width: Double
+}
 struct listArr:Codable{
     struct list:Codable{
         let name: String
@@ -20,4 +23,6 @@ struct place:Codable{
     let title:String
     let image:String
     let description:String
+    let longitude: Double
+    let latitude: Double
 }

@@ -2,5 +2,7 @@
 		{
 			"title": "Парк Горькова",
 			"image":"https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/gorkovpark.jpg",
-			"description": "когда-нибудь сделаю"
+			"description": "Центральный парк культуры и отдыха имени Максима Горького  — московский парк культуры и отдыха, столичная рекреационная зона, одна из самых больших и популярных в городе",
+			"longitude" : 55.729445,
+			"latitude": 37.601351
 		}

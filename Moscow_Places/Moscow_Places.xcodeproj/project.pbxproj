@@ -24,6 +24,8 @@
 		71BE5B492180A1B100861992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BE5B472180A1B100861992 /* LaunchScreen.storyboard */; };
 		71BE5B542180A1B100861992 /* Moscow_PlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BE5B532180A1B100861992 /* Moscow_PlacesTests.swift */; };
 		71BE5B5F2180A1B100861992 /* Moscow_PlacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BE5B5E2180A1B100861992 /* Moscow_PlacesUITests.swift */; };
+		71D294E021C83041004F4986 /* KudaGoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D294DF21C83041004F4986 /* KudaGoApi.swift */; };
+		71D294E221C91442004F4986 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D294E121C91442004F4986 /* EventController.swift */; };
 		9328261A00089019221B7BDE /* Pods_Moscow_PlacesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C700219A7894B660D98EAD2E /* Pods_Moscow_PlacesTests.framework */; };
 		9DC4C7CB4A1E8F8E51CC3BB5 /* Pods_Moscow_PlacesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FA201E78AD682A7C1B0239 /* Pods_Moscow_PlacesUITests.framework */; };
 		CACCEDAA154AECFE565F3412 /* Pods_Moscow_Places.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C00F0DFC7DC12CB1D2BD473 /* Pods_Moscow_Places.framework */; };
@@ -75,6 +77,8 @@
 		71BE5B5A2180A1B100861992 /* Moscow_PlacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Moscow_PlacesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BE5B5E2180A1B100861992 /* Moscow_PlacesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moscow_PlacesUITests.swift; sourceTree = "<group>"; };
 		71BE5B602180A1B100861992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71D294DF21C83041004F4986 /* KudaGoApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudaGoApi.swift; sourceTree = "<group>"; };
+		71D294E121C91442004F4986 /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
 		81DCEA1E6B29D273C0D0F7D9 /* Pods-Moscow_Places.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moscow_Places.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moscow_Places/Pods-Moscow_Places.debug.xcconfig"; sourceTree = "<group>"; };
 		8C00F0DFC7DC12CB1D2BD473 /* Pods_Moscow_Places.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moscow_Places.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8ED335105CB09147889517 /* Pods-Moscow_PlacesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moscow_PlacesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moscow_PlacesUITests/Pods-Moscow_PlacesUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,7 +189,9 @@
 			isa = PBXGroup;
 			children = (
 				71BE5B422180A1B000861992 /* Main.storyboard */,
+				71D294E121C91442004F4986 /* EventController.swift */,
 				715074CC21C1560A00D3F2BB /* MapController.swift */,
+				71D294DF21C83041004F4986 /* KudaGoApi.swift */,
 				71BE5B3E2180A1B000861992 /* AppDelegate.swift */,
 				71491CF221930FBC00A9C8D3 /* WelcomeViewController.swift */,
 				71491CE421930DC400A9C8D3 /* MenuViewController.swift */,
@@ -449,6 +455,8 @@
 				71B78A03219C47B200EC464F /* CellModel.swift in Sources */,
 				71B78A00219C476400EC464F /* TableCell.swift in Sources */,
 				7147D78A21A18E9A00ADC9E6 /* RestoranTypeViewController.swift in Sources */,
+				71D294E021C83041004F4986 /* KudaGoApi.swift in Sources */,
+				71D294E221C91442004F4986 /* EventController.swift in Sources */,
 				715074CD21C1560A00D3F2BB /* MapController.swift in Sources */,
 				71AF3F8421A591E400ED2955 /* PlaceViewController.swift in Sources */,
 				71AB31E4219C348100F8E88C /* RoundButton.swift in Sources */,

@@ -34,12 +34,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svS-PP-WoE">
-                                <rect key="frame" x="130" y="134" width="115" height="57.5"/>
+                                <rect key="frame" x="129.5" y="221" width="116" height="58"/>
                                 <color key="backgroundColor" red="0.52599440529999997" green="0.62660897380000002" blue="0.70128093270000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="svS-PP-WoE" secondAttribute="height" multiplier="2:1" id="b6y-wl-hFG"/>
                                 </constraints>
-                                <state key="normal" title="Start">
+                                <state key="normal" title="Категории">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.52599440526280761" green="0.62660897378385805" blue="0.70128093274111669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -48,12 +48,47 @@
                                     <segue destination="2Fv-gQ-M6v" kind="show" identifier="FirstSegue" id="kV5-Re-ONe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xe-QH-L4X">
+                                <rect key="frame" x="129.5" y="324" width="116" height="58"/>
+                                <color key="backgroundColor" red="0.52599440529999997" green="0.62660897380000002" blue="0.70128093270000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9Xe-QH-L4X" secondAttribute="height" multiplier="2:1" id="wfw-kX-Klh"/>
+                                </constraints>
+                                <state key="normal" title="Избранное">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gW5-VC-ahz">
+                                <rect key="frame" x="129.5" y="427" width="116" height="58"/>
+                                <color key="backgroundColor" red="0.52599440529999997" green="0.62660897380000002" blue="0.70128093270000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gW5-VC-ahz" secondAttribute="height" multiplier="2:1" id="H0t-SS-4wZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="О Разработчике">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVy-nc-akg" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
+                                <rect key="frame" x="327" y="82" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8-info"/>
+                                <connections>
+                                    <action selector="AppInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yyp-Eo-3tr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.10245022922754288" green="0.13274821639060974" blue="0.17255595326423645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="svS-PP-WoE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="6Io-X8-ZV5"/>
-                            <constraint firstItem="svS-PP-WoE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="F4s-kX-Yoq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="svS-PP-WoE" secondAttribute="trailing" constant="130" id="LAD-gI-B10"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="svS-PP-WoE" secondAttribute="bottom" constant="388" id="10l-pO-jEn"/>
+                            <constraint firstItem="9Xe-QH-L4X" firstAttribute="leading" secondItem="svS-PP-WoE" secondAttribute="leading" id="Efz-Sy-eaM"/>
+                            <constraint firstItem="svS-PP-WoE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V9N-aq-nkn"/>
+                            <constraint firstItem="svS-PP-WoE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="157" id="a1t-nG-M2y"/>
+                            <constraint firstItem="9Xe-QH-L4X" firstAttribute="top" secondItem="svS-PP-WoE" secondAttribute="bottom" constant="45" id="hFW-rx-U5o"/>
+                            <constraint firstItem="gW5-VC-ahz" firstAttribute="centerX" secondItem="9Xe-QH-L4X" secondAttribute="centerX" id="k8J-vb-8FM"/>
+                            <constraint firstItem="gW5-VC-ahz" firstAttribute="top" secondItem="9Xe-QH-L4X" secondAttribute="bottom" constant="45" id="t91-mt-ApV"/>
+                            <constraint firstItem="gW5-VC-ahz" firstAttribute="trailing" secondItem="9Xe-QH-L4X" secondAttribute="trailing" id="ukn-KP-LEw"/>
+                            <constraint firstItem="9Xe-QH-L4X" firstAttribute="centerX" secondItem="svS-PP-WoE" secondAttribute="centerX" id="y3D-qI-9FU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -126,6 +161,9 @@
                                 <state key="normal" title="Эвенты">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="AF0-ao-kfk" kind="show" identifier="Event" id="gap-Mx-dn6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите категорию" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3E-ph-Vzj">
                                 <rect key="frame" x="75" y="85" width="225" height="21"/>
@@ -278,11 +316,79 @@
                     </view>
                     <connections>
                         <outlet property="TableList" destination="1hW-wE-3nJ" id="yMx-th-WqN"/>
+                        <segue destination="LLk-s6-x2l" kind="show" identifier="GoEvent" id="QTp-Dd-eig"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djs-If-clF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1592.8" y="122.78860569715144"/>
+        </scene>
+        <!--Event Controller-->
+        <scene sceneID="K8U-dR-Y6C">
+            <objects>
+                <viewController id="LLk-s6-x2l" customClass="EventController" customModule="Moscow_Places" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3kQ-Ut-LdW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Загрузка..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iH-Ck-Evu">
+                                <rect key="frame" x="16" y="64" width="343" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.98778421049999998" green="1" blue="0.98281458889999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DJp-sZ-fhI">
+                                <rect key="frame" x="16" y="117" width="343" height="168"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6C-j2-7Y2">
+                                <rect key="frame" x="16" y="293" width="343" height="354"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ei1-Ee-tyj">
+                                        <rect key="frame" x="8" y="8" width="327" height="338"/>
+                                        <color key="backgroundColor" red="0.10241632909999999" green="0.13281205300000001" blue="0.16863393779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" red="0.98778421049999998" green="1" blue="0.98281458889999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ei1-Ee-tyj" firstAttribute="top" secondItem="V6C-j2-7Y2" secondAttribute="topMargin" id="4rt-x9-Mf9"/>
+                                    <constraint firstItem="ei1-Ee-tyj" firstAttribute="leading" secondItem="V6C-j2-7Y2" secondAttribute="leadingMargin" id="5Xd-gR-qpm"/>
+                                    <constraint firstItem="ei1-Ee-tyj" firstAttribute="centerX" secondItem="V6C-j2-7Y2" secondAttribute="centerX" id="H9t-fq-hfR"/>
+                                    <constraint firstItem="ei1-Ee-tyj" firstAttribute="centerY" secondItem="V6C-j2-7Y2" secondAttribute="centerY" id="SDD-aJ-S91"/>
+                                    <constraint firstItem="ei1-Ee-tyj" firstAttribute="trailing" secondItem="V6C-j2-7Y2" secondAttribute="trailingMargin" id="tqq-Ct-3tP"/>
+                                    <constraint firstItem="ei1-Ee-tyj" firstAttribute="bottom" secondItem="V6C-j2-7Y2" secondAttribute="bottomMargin" id="y2M-B0-dDw"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10241632908582687" green="0.13281205296516418" blue="0.16863393783569336" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="V6C-j2-7Y2" firstAttribute="trailing" secondItem="5iH-Ck-Evu" secondAttribute="trailing" id="3af-Of-srA"/>
+                            <constraint firstItem="V6C-j2-7Y2" firstAttribute="top" secondItem="3kQ-Ut-LdW" secondAttribute="top" constant="293" id="AdB-gn-qhf"/>
+                            <constraint firstItem="V6C-j2-7Y2" firstAttribute="top" secondItem="DJp-sZ-fhI" secondAttribute="bottom" constant="8" id="KiT-ZE-M4t"/>
+                            <constraint firstItem="5iH-Ck-Evu" firstAttribute="trailing" secondItem="3kQ-Ut-LdW" secondAttribute="trailingMargin" id="LxR-RS-Q8j"/>
+                            <constraint firstItem="V6C-j2-7Y2" firstAttribute="top" secondItem="DJp-sZ-fhI" secondAttribute="bottom" constant="8" symbolic="YES" id="Mx6-2B-aQV"/>
+                            <constraint firstItem="V6C-j2-7Y2" firstAttribute="leading" secondItem="5iH-Ck-Evu" secondAttribute="leading" id="OOG-hE-FYU"/>
+                            <constraint firstItem="5iH-Ck-Evu" firstAttribute="leading" secondItem="3kQ-Ut-LdW" secondAttribute="leadingMargin" id="QxV-7p-5HX"/>
+                            <constraint firstItem="QRh-xu-mi5" firstAttribute="bottom" secondItem="5iH-Ck-Evu" secondAttribute="bottom" constant="558" id="R4P-N8-2bf"/>
+                            <constraint firstItem="DJp-sZ-fhI" firstAttribute="top" secondItem="5iH-Ck-Evu" secondAttribute="bottom" constant="8" symbolic="YES" id="gGi-2Y-dFt"/>
+                            <constraint firstItem="5iH-Ck-Evu" firstAttribute="top" secondItem="QRh-xu-mi5" secondAttribute="top" id="gU7-Rf-Tga"/>
+                            <constraint firstItem="V6C-j2-7Y2" firstAttribute="trailing" secondItem="DJp-sZ-fhI" secondAttribute="trailing" id="ro1-Yg-WC7"/>
+                            <constraint firstItem="V6C-j2-7Y2" firstAttribute="leading" secondItem="DJp-sZ-fhI" secondAttribute="leading" id="s9d-1n-EnG"/>
+                            <constraint firstAttribute="bottom" secondItem="V6C-j2-7Y2" secondAttribute="bottom" constant="20" symbolic="YES" id="sOq-Sh-Pxx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QRh-xu-mi5"/>
+                    </view>
+                    <connections>
+                        <outlet property="eventDescription" destination="ei1-Ee-tyj" id="cV1-dC-AVG"/>
+                        <outlet property="eventImage" destination="DJp-sZ-fhI" id="ig6-iW-8uW"/>
+                        <outlet property="eventTitle" destination="5iH-Ck-Evu" id="Ddq-Lo-PeT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ac-GG-5Ty" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2392.8000000000002" y="-551.87406296851577"/>
         </scene>
         <!--Place View Controller-->
         <scene sceneID="zX4-3n-P3L">
@@ -321,12 +427,12 @@
                                     <constraint firstItem="OO4-zR-Fzs" firstAttribute="trailing" secondItem="vVe-dY-zVE" secondAttribute="trailingMargin" id="qjd-bx-3H6"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syy-JI-wrn" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syy-JI-wrn" customClass="RoundButton" customModule="Moscow_Places" customModuleProvider="target">
                                 <rect key="frame" x="325" y="122" width="34" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="BHn-V4-0ED"/>
                                 </constraints>
-                                <state key="normal" title="Map">
+                                <state key="normal" image="icons8-map_marker">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -389,7 +495,11 @@
             <point key="canvasLocation" x="3149.5999999999999" y="122.78860569715144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-info" width="25" height="25"/>
+        <image name="icons8-map_marker" width="25" height="25"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="koC-08-4db"/>
+        <segue reference="gap-Mx-dn6"/>
     </inferredMetricsTieBreakers>
 </document>

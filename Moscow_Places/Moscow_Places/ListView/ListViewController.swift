@@ -22,7 +22,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         
-        performSegue(withIdentifier: "GoPlace", sender: nil)
+        if(category=="Event"){performSegue(withIdentifier: "GoEvent", sender: nil)}
+        else{performSegue(withIdentifier: "GoPlace", sender: nil)}
     
     }
     
@@ -49,7 +50,11 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableList.register(UINib.init(nibName: "TableCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
         
         
-        
+        if(category=="Event"){
+            fillModelEvent(doneResult!)
+            self.tableList.reloadData()
+        }
+        else{
         let sourceURL = "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/JSON/\(category).json"
         
         DispatchQueue.global().async {
@@ -60,15 +65,15 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             do {
                let jsonResult = try JSONDecoder().decode(listArr.self, from:data )
                 DispatchQueue.main.async {
-                    self.fillModelArray(jsonResult)
+                    self.fillModelPlace(jsonResult)
                     self.tableList.reloadData()
                 }
             
             }catch let error{print(error)}
             }.resume()}
         
-    }
-    func fillModelArray(_ mass: listArr) {
+        }}
+    func fillModelPlace(_ mass: listArr) {
         for elm in mass.places {
             let model = CellModel()
             model.image = "\(elm.image)"
@@ -76,23 +81,30 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             identifier.append(elm.cellname)
             modelArray.append(model)
         }
+        
+    }
+        func fillModelEvent(_ mass: event) {
+            for elm in mass.results {
+                let model = CellModel()
+                model.image = "\(elm.images[0].image)"
+                model.title = "\(elm.title)"
+                modelArray.append(model)
+            }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender:Any?){
+        if(segue.identifier=="GoPlace"){
+            let finishResult = segue.destination as? PlaceViewController
+            let indexPath = tableList.indexPathForSelectedRow
+            finishResult?.identifier = "\(self.identifier[indexPath?.row ?? 1])"
+        }
+        if(segue.identifier=="GoEvent"){
+            let finishResult = segue.destination as? EventController
+            let indexPath = tableList.indexPathForSelectedRow
+            finishResult?.eventNumber = indexPath?.row ?? 0
+        }
         
-        let finishResult = segue.destination as? PlaceViewController
-        
-        let indexPath = tableList.indexPathForSelectedRow
-        finishResult?.identifier = "\(self.identifier[indexPath?.row ?? 1])"
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

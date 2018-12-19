@@ -22,13 +22,13 @@ class EventController: UIViewController {
         eventImage.kf.setImage(with: URL(string: (doneResult?.results[eventNumber].images[0].image)!))
         eventDescription.text = doneResult?.results[eventNumber].body_text
         
-        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(leftslide))
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(rightslide))
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
         
-        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(rightslide))
-        swipeDown.direction = .left
-        self.view.addGestureRecognizer(swipeDown)
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(leftslide))
+        swipeLeft.direction = .left
+        self.view.addGestureRecognizer(swipeLeft)
     }
     
 

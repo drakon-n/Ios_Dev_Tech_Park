@@ -2,5 +2,7 @@
 		{
 			"title": "SAVVA",
 			"image":"https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/savva.jpg",
-			"description": "когда-нибудь сделаю описание"
+			"description": "когда-нибудь сделаю описание",
+			"longitude" : 55.757383,
+			"latitude": 37.659030
 		}

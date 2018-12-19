@@ -2,5 +2,7 @@
 		{
 			"title": "Му-Му",
 			"image":"https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/Images/mumu.jpg",
-			"description": "почти как Бауманская столовка"
+			"description": "почти как Бауманская столовка",
+			"longitude" : 55.757383,
+			"latitude": 37.659030
 		}

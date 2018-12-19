@@ -26,6 +26,11 @@
 		71BE5B5F2180A1B100861992 /* Moscow_PlacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BE5B5E2180A1B100861992 /* Moscow_PlacesUITests.swift */; };
 		71D294E021C83041004F4986 /* KudaGoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D294DF21C83041004F4986 /* KudaGoApi.swift */; };
 		71D294E221C91442004F4986 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D294E121C91442004F4986 /* EventController.swift */; };
+		71D294E521C98927004F4986 /* DataStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71D294E321C98927004F4986 /* DataStorage.xcdatamodeld */; };
+		71D294E721C98D1C004F4986 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D294E621C98D1C004F4986 /* CoreData.swift */; };
+		71D294E921C99C3C004F4986 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D294E821C99C3C004F4986 /* FavoritesViewController.swift */; };
+		71D294EC21C9A22C004F4986 /* FavoritesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D294EA21C9A22C004F4986 /* FavoritesTableCell.swift */; };
+		71D294ED21C9A22C004F4986 /* FavoritesTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71D294EB21C9A22C004F4986 /* FavoritesTableCell.xib */; };
 		9328261A00089019221B7BDE /* Pods_Moscow_PlacesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C700219A7894B660D98EAD2E /* Pods_Moscow_PlacesTests.framework */; };
 		9DC4C7CB4A1E8F8E51CC3BB5 /* Pods_Moscow_PlacesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FA201E78AD682A7C1B0239 /* Pods_Moscow_PlacesUITests.framework */; };
 		CACCEDAA154AECFE565F3412 /* Pods_Moscow_Places.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C00F0DFC7DC12CB1D2BD473 /* Pods_Moscow_Places.framework */; };
@@ -79,6 +84,11 @@
 		71BE5B602180A1B100861992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71D294DF21C83041004F4986 /* KudaGoApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudaGoApi.swift; sourceTree = "<group>"; };
 		71D294E121C91442004F4986 /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
+		71D294E421C98927004F4986 /* DataStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataStorage.xcdatamodel; sourceTree = "<group>"; };
+		71D294E621C98D1C004F4986 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		71D294E821C99C3C004F4986 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		71D294EA21C9A22C004F4986 /* FavoritesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableCell.swift; sourceTree = "<group>"; };
+		71D294EB21C9A22C004F4986 /* FavoritesTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableCell.xib; sourceTree = "<group>"; };
 		81DCEA1E6B29D273C0D0F7D9 /* Pods-Moscow_Places.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moscow_Places.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moscow_Places/Pods-Moscow_Places.debug.xcconfig"; sourceTree = "<group>"; };
 		8C00F0DFC7DC12CB1D2BD473 /* Pods_Moscow_Places.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moscow_Places.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8ED335105CB09147889517 /* Pods-Moscow_PlacesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moscow_PlacesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moscow_PlacesUITests/Pods-Moscow_PlacesUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				71B789FF219C476400EC464F /* TableCell.xib */,
+				71D294EA21C9A22C004F4986 /* FavoritesTableCell.swift */,
+				71D294EB21C9A22C004F4986 /* FavoritesTableCell.xib */,
 				71B789FE219C476400EC464F /* TableCell.swift */,
 				71B78A02219C47B200EC464F /* CellModel.swift */,
 			);
@@ -189,11 +201,14 @@
 			isa = PBXGroup;
 			children = (
 				71BE5B422180A1B000861992 /* Main.storyboard */,
+				71D294E821C99C3C004F4986 /* FavoritesViewController.swift */,
 				71D294E121C91442004F4986 /* EventController.swift */,
 				715074CC21C1560A00D3F2BB /* MapController.swift */,
 				71D294DF21C83041004F4986 /* KudaGoApi.swift */,
 				71BE5B3E2180A1B000861992 /* AppDelegate.swift */,
+				71D294E321C98927004F4986 /* DataStorage.xcdatamodeld */,
 				71491CF221930FBC00A9C8D3 /* WelcomeViewController.swift */,
+				71D294E621C98D1C004F4986 /* CoreData.swift */,
 				71491CE421930DC400A9C8D3 /* MenuViewController.swift */,
 				7147D78921A18E9A00ADC9E6 /* RestoranTypeViewController.swift */,
 				71AF3F8321A591E400ED2955 /* PlaceViewController.swift */,
@@ -335,6 +350,7 @@
 			files = (
 				71BE5B492180A1B100861992 /* LaunchScreen.storyboard in Resources */,
 				71BE5B462180A1B100861992 /* Assets.xcassets in Resources */,
+				71D294ED21C9A22C004F4986 /* FavoritesTableCell.xib in Resources */,
 				71B78A01219C476400EC464F /* TableCell.xib in Resources */,
 				71BE5B442180A1B000861992 /* Main.storyboard in Resources */,
 			);
@@ -456,11 +472,15 @@
 				71B78A00219C476400EC464F /* TableCell.swift in Sources */,
 				7147D78A21A18E9A00ADC9E6 /* RestoranTypeViewController.swift in Sources */,
 				71D294E021C83041004F4986 /* KudaGoApi.swift in Sources */,
+				71D294E721C98D1C004F4986 /* CoreData.swift in Sources */,
 				71D294E221C91442004F4986 /* EventController.swift in Sources */,
 				715074CD21C1560A00D3F2BB /* MapController.swift in Sources */,
 				71AF3F8421A591E400ED2955 /* PlaceViewController.swift in Sources */,
+				71D294EC21C9A22C004F4986 /* FavoritesTableCell.swift in Sources */,
 				71AB31E4219C348100F8E88C /* RoundButton.swift in Sources */,
 				71491CEA21930DC400A9C8D3 /* MenuViewController.swift in Sources */,
+				71D294E921C99C3C004F4986 /* FavoritesViewController.swift in Sources */,
+				71D294E521C98927004F4986 /* DataStorage.xcdatamodeld in Sources */,
 				71BE5B3F2180A1B000861992 /* AppDelegate.swift in Sources */,
 				7147D78C21A195E500ADC9E6 /* ListViewController.swift in Sources */,
 				71491CF321930FBC00A9C8D3 /* WelcomeViewController.swift in Sources */,
@@ -799,6 +819,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		71D294E321C98927004F4986 /* DataStorage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				71D294E421C98927004F4986 /* DataStorage.xcdatamodel */,
+			);
+			currentVersion = 71D294E421C98927004F4986 /* DataStorage.xcdatamodel */;
+			path = DataStorage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 71BE5B332180A1B000861992 /* Project object */;
 }

@@ -28,7 +28,6 @@ let apiRequestUrl = URL(string: "https://kudago.com/public-api/v1.4/events/?page
 var doneResult:event? = nil
 var isApiReady = false
 func getApiData(){
-    print("\(apiRequestUrl!)")
     DispatchQueue.global().async {
         URLSession.shared.dataTask(with: apiRequestUrl!){(data, responce, error) in
             guard let data = data else{return}

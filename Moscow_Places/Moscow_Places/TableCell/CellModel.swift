@@ -13,3 +13,8 @@ class CellModel {
     var title: String?
     var image: String?
 }
+
+class FavoriteCellModel {
+    var title: String?
+    var image: UIImage?
+}

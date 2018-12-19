@@ -11,6 +11,8 @@ import UIKit
 
 
 class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet var navigationView: UIView!
+    @IBOutlet weak var ooops: UILabel!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return modelArray.count
     }
@@ -44,6 +46,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableList: UITableView!
     
     override func viewDidLoad() {
+        self.view.backgroundColor = #colorLiteral(red: 0.09432386607, green: 0.1339568198, blue: 0.1721197665, alpha: 1)
         super.viewDidLoad()
         tableList.delegate = self
         tableList.dataSource = self
@@ -51,8 +54,9 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         
         if(category=="Event"){
+            if((doneResult?.results.count ?? -1)>0){
             fillModelEvent(doneResult!)
-            self.tableList.reloadData()
+                self.tableList.reloadData()}
         }
         else{
         let sourceURL = "https://raw.githubusercontent.com/drakon-n/Ios_Dev_Tech_Park/master/Moscow_Places/JSON/\(category).json"
@@ -80,6 +84,10 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             model.title = "\(elm.name)"
             identifier.append(elm.cellname)
             modelArray.append(model)
+            if(mass.places.count==0){ooops.alpha = 1
+                tableList.alpha = 0
+            }else{ooops.alpha = 0
+                tableList.alpha = 1}
         }
         
     }
@@ -91,7 +99,13 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
                 modelArray.append(model)
             }
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        if(category=="Event"){
+            if((doneResult?.results.count ?? -1)>0){
+                fillModelEvent(doneResult!)
+                self.tableList.reloadData()}
+        }
+    }
     override func prepare(for segue: UIStoryboardSegue, sender:Any?){
         if(segue.identifier=="GoPlace"){
             let finishResult = segue.destination as? PlaceViewController

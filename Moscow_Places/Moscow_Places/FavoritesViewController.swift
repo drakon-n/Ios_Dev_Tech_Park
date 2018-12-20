@@ -46,6 +46,7 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib.init(nibName: "FavoritesTableCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        getApiData()
         
     }
     override func viewWillAppear(_ animated: Bool) {

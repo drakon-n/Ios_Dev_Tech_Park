@@ -46,6 +46,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableList: UITableView!
     
     override func viewDidLoad() {
+        ooops.alpha = 0
         self.view.backgroundColor = #colorLiteral(red: 0.09432386607, green: 0.1339568198, blue: 0.1721197665, alpha: 1)
         super.viewDidLoad()
         tableList.delegate = self
@@ -78,6 +79,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         }}
     func fillModelPlace(_ mass: listArr) {
+        modelArray = []
         for elm in mass.places {
             let model = CellModel()
             model.image = "\(elm.image)"
@@ -92,11 +94,16 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
         func fillModelEvent(_ mass: event) {
+            modelArray = []
             for elm in mass.results {
                 let model = CellModel()
                 model.image = "\(elm.images[0].image)"
                 model.title = "\(elm.title)"
                 modelArray.append(model)
+                if(mass.results.count==0){ooops.alpha = 1
+                    tableList.alpha = 0
+                }else{ooops.alpha = 0
+                    tableList.alpha = 1}
             }
     }
     override func viewWillAppear(_ animated: Bool) {
